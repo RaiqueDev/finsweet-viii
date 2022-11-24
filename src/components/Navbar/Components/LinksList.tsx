@@ -11,11 +11,11 @@ export const LinksList = () => {
     <>
       <LinksListContainer>
         <nav>
-          <a href="#">
+          <NavLink to="/podcasts">
             <HeadingH5>
               Podcast
             </HeadingH5>
-          </a>
+          </NavLink>
 
           <a href="#">
             <HeadingH5>

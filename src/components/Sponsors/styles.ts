@@ -31,6 +31,10 @@ export const SponsorsMain = styled.main`
   margin: 0 auto;
   background-color: ${props => props.theme.blue};
   color: ${props => props.theme.white};
+
+  @media (max-width: 30rem) {
+    padding: 1.5rem 0;
+  }
 `;
 
 export const SponsorsPurple = styled.div`

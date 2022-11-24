@@ -74,7 +74,7 @@ export const HeadingH4 = styled.h4`
 `;
 
 interface HeadingProps {
-  variant?: 'White'
+  variant?: 'White' | 'Gray'
 }
 
 export const HeadingH5 = styled.h5<HeadingProps>`
@@ -89,6 +89,10 @@ export const HeadingH5 = styled.h5<HeadingProps>`
 
   ${props => props.variant === 'White' && css`
     color: ${props => props.theme.white};
+  `}
+
+  ${props => props.variant === 'Gray' && css`
+    color: ${props => props.theme.gray};
   `}
 `;
 
@@ -108,10 +112,19 @@ export const Body = styled.p`
   }
 `;
 
+export const Caption = styled.p`
+  font: .875rem 600 Inter, sans-serif;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: ${props => props.theme.off_white};
+`;
+
 // Components
 
 interface ButtonProps {
-  variant?: 'Primary_Button' | 'Secondary_Button' | 'Listen' | 'Read_Now' | 'Input_Subscribe'
+  variant?: 'Primary_Button' | 'Secondary_Button' | 'Listen' | 'Listen_White' | 'Read_Now' | 'Input_Subscribe'
 }
 
 export const Button = styled.button<ButtonProps>`
@@ -138,8 +151,8 @@ export const Button = styled.button<ButtonProps>`
   `}
 
   ${props => props.variant === 'Secondary_Button' && css`
-    border: 2px solid ${props => props.theme.black};
-    color: ${props => props.theme.black};
+    border: 2px solid ${props => props.theme.white};
+    color: ${props => props.theme.white};
     background-color: transparent;
 
     &:hover {
@@ -162,6 +175,23 @@ export const Button = styled.button<ButtonProps>`
 
     &:hover {
       color: #3E2DB2;
+      transition: 0.5s;
+    }
+  `}
+
+  ${props => props.variant === 'Listen_White' && css`
+    padding: 0;
+    
+    display: flex;
+    justify-content: flex-start;
+
+    gap: .5rem;
+    
+    background-color: transparent;
+    color: ${props => props.theme.white};
+
+    &:hover {
+      color: ${props => props.theme.gray};
       transition: 0.5s;
     }
   `}
@@ -191,7 +221,7 @@ export const Button = styled.button<ButtonProps>`
 // Categories Button
 
 interface CategoriesButtonProps {
-  variant?: 'Active' | 'Disable' 
+  variant?: 'Active' | 'Disable'
 }
 
 export const CategoriesButtons = styled.button<CategoriesButtonProps>`
