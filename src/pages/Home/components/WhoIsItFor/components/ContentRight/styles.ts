@@ -37,7 +37,6 @@ export const ContentRightImageMain = styled.div`
   height: 24rem;
 
   border-radius: 999px;
-  border: .75rem solid ${props => props.theme.green};
 
   background-image: url('https://images.pexels.com/photos/4988133/pexels-photo-4988133.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-position: center;

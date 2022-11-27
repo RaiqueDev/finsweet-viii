@@ -6,7 +6,7 @@ import {
 
 import {
   HeadingH3
-} from '../../../../styles/global';
+} from '../../styles/global';
 
 import {
   BrandsSocial

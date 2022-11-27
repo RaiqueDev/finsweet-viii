@@ -3,7 +3,7 @@ import {
   GooglePodcast,
   SoundCloud,
   Spotify
-} from "../../../../../../assets/SocialLogo";
+} from "../../../../assets/SocialLogo";
 
 import {
   BrandsSocialContainer,

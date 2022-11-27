@@ -1,5 +1,5 @@
 import { Header } from "./components/Header";
-import { Brands } from "./components/Brands";
+import { Brands } from "../../components/Brands";
 import { WhoIsItFor } from "./components/WhoIsItFor";
 import { HowItBegan } from "./components/HowItBegan";
 import { RecentEpisodes } from "./components/RecentEpisodes";

@@ -103,22 +103,38 @@ export const HeadingH6 = styled.h6`
 
 // Body
 
-export const Body = styled.p`
+interface BodyProps {
+  variant?: 'SemiBold'
+}
+
+export const Body = styled.p<BodyProps>`
   font: 400 .875rem Inter, sans-serif;
   line-height: 150%;
 
   @media (max-width: 30rem) {
     font: 500 .75rem Inter, sans-serif;
   }
+
+  ${props => props.variant === 'SemiBold' && css`
+    font-weight: 600;
+  `}
 `;
 
-export const Caption = styled.p`
+interface CaptionProps {
+  variant?: 'Purple'
+}
+
+export const Caption = styled.p<CaptionProps>`
   font: .875rem 600 Inter, sans-serif;
   line-height: 20px;
   letter-spacing: 3px;
   text-transform: uppercase;
 
   color: ${props => props.theme.off_white};
+
+  ${props => props.variant === 'Purple' && css`
+    color: ${props => props.theme.purple};
+  `}
 `;
 
 // Components
@@ -270,5 +286,21 @@ export const SocialContainer = styled.div`
   
   @media (max-width: 48rem) {
     grid-template-columns: repeat(2, 2fr);
+  }
+`;
+
+export const Content = styled.div`
+  width: 100%;
+  max-width: 30.375rem;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  gap: 2rem;
+
+  @media (max-width: 48rem) {
+    align-items: center;
+    text-align: center;
   }
 `;

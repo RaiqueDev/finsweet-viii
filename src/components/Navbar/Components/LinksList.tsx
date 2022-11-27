@@ -17,11 +17,11 @@ export const LinksList = () => {
             </HeadingH5>
           </NavLink>
 
-          <a href="#">
+          <NavLink to="/host">
             <HeadingH5>
               Host
             </HeadingH5>
-          </a>
+          </NavLink>
 
           <a href="#">
             <HeadingH5>
