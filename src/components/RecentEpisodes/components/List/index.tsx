@@ -10,7 +10,7 @@ import {
   HeadingH3,
   Body,
   Button
-} from '../../../../../../styles/global';
+} from '../../../../styles/global';
 
 import {
   PlayCircle

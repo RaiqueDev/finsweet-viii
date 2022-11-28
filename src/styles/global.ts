@@ -64,18 +64,27 @@ export const HeadingH3 = styled.h3`
   }
 `;
 
-export const HeadingH4 = styled.h4`
+interface HeadingProps {
+  variant?: 'White' | 'Gray' | 'Purple'
+}
+
+export const HeadingH4 = styled.h4<HeadingProps>`
   font: 500 1.125rem Poppins, sans-serif;
   line-height: 140%;
 
   @media (max-width: 30rem) {
     font: 500 .875rem Poppins, sans-serif;
   }
+
+  ${props => props.variant === 'Purple' && css`
+    color: ${props => props.theme.purple};
+  `}
+
+  ${props => props.variant === 'Gray' && css`
+    color: ${props => props.theme.gray};
+  `}
 `;
 
-interface HeadingProps {
-  variant?: 'White' | 'Gray'
-}
 
 export const HeadingH5 = styled.h5<HeadingProps>`
   font: 500 .875rem Poppins, sans-serif;

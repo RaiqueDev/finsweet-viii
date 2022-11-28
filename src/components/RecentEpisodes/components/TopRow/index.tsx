@@ -8,7 +8,7 @@ import {
   Button,
   HeadingH2,
   Body
-} from "../../../../../../styles/global";
+} from "../../../../styles/global";
 
 export const TopRow = () => {
   return (

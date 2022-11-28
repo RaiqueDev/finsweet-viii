@@ -4,7 +4,7 @@ import { DreamSection } from "./components/DreamSection";
 import { Journey } from "./components/Journey";
 import { Achievements } from "./components/Achievements";
 import { CTA } from "../Podcasts/components/CTA";
-import { RecentEpisodes } from "../Home/components/RecentEpisodes";
+import { RecentEpisodes } from "../../components/RecentEpisodes";
 
 export const Host = () => {
   return (

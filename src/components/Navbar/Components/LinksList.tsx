@@ -35,13 +35,13 @@ export const LinksList = () => {
             </HeadingH5>
           </NavLink>
 
-        <a href="#">
-          <HeadingH5>
-            Contact
-          </HeadingH5>
-        </a>
-      </nav>
-    </LinksListContainer>
+          <NavLink to="/contact">
+            <HeadingH5>
+              Contact
+            </HeadingH5>
+          </NavLink>
+        </nav>
+      </LinksListContainer>
     </>
   );
 }

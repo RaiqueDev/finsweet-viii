@@ -3,13 +3,9 @@ import {
   RecentEpisodesMain
 } from './styles';
 
-import {
-  List
-} from './components/List';
+import { List } from './components/List';
 
-import {
-  TopRow
-} from './components/TopRow';
+import { TopRow } from './components/TopRow';
 
 export const RecentEpisodes = () => {
   return (

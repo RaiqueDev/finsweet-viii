@@ -5,6 +5,7 @@ import { Podcasts } from "./pages/Podcasts";
 import { Host } from "./pages/Host";
 import { About } from "./pages/About";
 import { Blog } from "./pages/Blog";
+import { Contact } from "./pages/Contact";
 
 export const Router = () => {
   return (
@@ -17,6 +18,8 @@ export const Router = () => {
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
         </Route>
+        
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
   );

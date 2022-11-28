@@ -3,7 +3,8 @@ import { Items } from "./components/Items";
 import { AboutOurTeam } from "./components/AboutOurTeam";
 import { MeetOurTeam } from "./components/MeetOurTeam";
 import { OurSponsors } from "./components/OurSponsors";
-import { RecentEpisodes } from "../Home/components/RecentEpisodes";
+import { RecentEpisodes } from "../../components/RecentEpisodes";
+
 
 export const About = () => {
   return (
@@ -13,7 +14,7 @@ export const About = () => {
       <AboutOurTeam />
       <MeetOurTeam />
       <OurSponsors />
-      <RecentEpisodes />
+      <RecentEpisodes/>
     </>
   );
 }
