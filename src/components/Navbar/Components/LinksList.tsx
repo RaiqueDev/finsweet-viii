@@ -29,19 +29,19 @@ export const LinksList = () => {
             </HeadingH5>
           </NavLink>
 
-          <a href="#">
+          <NavLink to="/blog">
             <HeadingH5>
               Blog
             </HeadingH5>
-          </a>
+          </NavLink>
 
-          <a href="#">
-            <HeadingH5>
-              Contact
-            </HeadingH5>
-          </a>
-        </nav>
-      </LinksListContainer>
+        <a href="#">
+          <HeadingH5>
+            Contact
+          </HeadingH5>
+        </a>
+      </nav>
+    </LinksListContainer>
     </>
   );
 }

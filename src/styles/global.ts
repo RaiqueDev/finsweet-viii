@@ -135,6 +135,8 @@ export const Caption = styled.p<CaptionProps>`
   letter-spacing: 3px;
   text-transform: uppercase;
 
+  margin-bottom: 1rem;
+
   color: ${props => props.theme.off_white};
 
   ${props => props.variant === 'Purple' && css`

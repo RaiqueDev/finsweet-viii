@@ -106,7 +106,6 @@ export const ImageTeamMembersContainer = styled.div<ImageTeamMembersProps>`
   max-width: 19.25rem;
   height: 19.25rem;
 
-  background-color: green;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -125,5 +124,43 @@ export const ImageTeamMembersContainer = styled.div<ImageTeamMembersProps>`
 
   ${props => props.variant === 'SteveWinston' && css`
     background-image: url('https://images.pexels.com/photos/4221848/pexels-photo-4221848.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  `}
+`;
+
+interface ImgBlogsProps {
+  variant?: 'ImgBlogs1' | 'ImgBlogs2' | 'ImgBlogs3' | 'ImgBlogs4' | 'ImgBlogs5' | 'ImgBlogs6';
+}
+
+export const ImgBlogs = styled.div<ImgBlogsProps>`
+  width: 100%;
+  max-width: 26rem;
+  height: 16rem;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  ${props => props.variant === 'ImgBlogs1' && css`
+    background-image: url('https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&');
+  `}
+
+  ${props => props.variant === 'ImgBlogs2' && css`
+    background-image: url('https://images.pexels.com/photos/3182747/pexels-photo-3182747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  `}
+
+    ${props => props.variant === 'ImgBlogs3' && css`
+    background-image: url('https://images.pexels.com/photos/3182749/pexels-photo-3182749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  `}
+
+  ${props => props.variant === 'ImgBlogs4' && css`
+    background-image: url('https://images.pexels.com/photos/3182833/pexels-photo-3182833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  `}
+
+  ${props => props.variant === 'ImgBlogs5' && css`
+    background-image: url('https://images.pexels.com/photos/3184585/pexels-photo-3184585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  `}
+
+  ${props => props.variant === 'ImgBlogs6' && css`
+    background-image: url('https://images.pexels.com/photos/3182742/pexels-photo-3182742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   `}
 `;
