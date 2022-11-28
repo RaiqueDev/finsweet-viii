@@ -111,6 +111,11 @@ export const Body = styled.p<BodyProps>`
   font: 400 .875rem Inter, sans-serif;
   line-height: 150%;
 
+  display: flex;
+  flex-direction: column;
+
+  gap: .75rem;
+
   @media (max-width: 30rem) {
     font: 500 .75rem Inter, sans-serif;
   }

@@ -23,11 +23,11 @@ export const LinksList = () => {
             </HeadingH5>
           </NavLink>
 
-          <a href="#">
+          <NavLink to="/about">
             <HeadingH5>
               About
             </HeadingH5>
-          </a>
+          </NavLink>
 
           <a href="#">
             <HeadingH5>
