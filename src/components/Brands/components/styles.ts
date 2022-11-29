@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const BrandsSocialContainer = styled.div`
+export const BrandsContainer = styled.div`
   width: 100%;
 `;
 
-export const BrandsSocialMain = styled.main`
+export const BrandsMain = styled.main`
   width: 100%;
 
   display: grid;

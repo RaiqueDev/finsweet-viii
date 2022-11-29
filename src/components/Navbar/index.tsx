@@ -1,3 +1,6 @@
+import { NavLink } from "react-router-dom";
+import { List } from "phosphor-react";
+
 import {
   Menu,
   NavbarContainer,
@@ -7,10 +10,8 @@ import {
 
 import { LinksList } from "./Components/LinksList";
 
-import { Logo } from "../../assets/Logo";
+import { Logo } from "../../assets/Logos/Logo";
 import { Social } from "../../assets/Social";
-import { List } from "phosphor-react";
-import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   return (

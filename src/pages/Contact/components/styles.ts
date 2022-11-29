@@ -7,6 +7,10 @@ export const HeaderContainer = styled.div`
   flex-direction: column;
 
   gap: 1rem;
+
+  @media (max-width: 64rem) {
+    align-items: center; 
+  }
 `;
 
 export const ContentRightContainer = styled.div`

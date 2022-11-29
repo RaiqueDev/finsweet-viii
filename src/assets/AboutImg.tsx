@@ -1,9 +1,9 @@
-import { AudioTrackImgContainer } from "./styles";
+import { LogoContainer } from "./styles";
 
 export const AboutImg = () => {
   return (
     <>
-      <AudioTrackImgContainer>
+      <LogoContainer>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="480"
@@ -24,7 +24,7 @@ export const AboutImg = () => {
             d="M45.17 178.062L2.618 135.51 135.511 2.618l42.551 42.552zM239.746 480l-42.552-42.552 240.253-240.253L480 239.747z"
           ></path>
         </svg>
-      </AudioTrackImgContainer>
+      </LogoContainer>
     </>
   );
 }

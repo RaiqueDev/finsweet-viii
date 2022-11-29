@@ -9,11 +9,11 @@ import { HeadingH4 } from '../../../styles/global';
 import { Social } from "../../../assets/Social";
 
 import {
-  ApplePodcast,
-  GooglePodcast,
-  SoundCloud,
-  Spotify
-} from "../../../assets/SocialLogo";
+  LogoBrands_ApplePodcast,
+  LogoBrands_GooglePodcast,
+  LogoBrands_SoundCloud,
+  LogoBrands_Spotify
+} from "../../../assets/Logos/LogoBrands";
 
 export const ContentRight = () => {
   return (
@@ -25,10 +25,10 @@ export const ContentRight = () => {
           </HeadingH4>
 
           <SubscribeNow>
-            <ApplePodcast />
-            <SoundCloud />
-            <GooglePodcast />
-            <Spotify />
+            <LogoBrands_ApplePodcast />
+            <LogoBrands_SoundCloud />
+            <LogoBrands_GooglePodcast />
+            <LogoBrands_Spotify />
           </SubscribeNow>
 
           <SocialWrapper>

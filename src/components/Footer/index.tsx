@@ -7,7 +7,7 @@ import { Pages } from "./components/Pages";
 import { ReachUs } from "./components/ReachUs";
 import { Subscribe } from "./components/Subscribe";
 
-import { LogoFooter } from '../../assets/LogoFooter';
+import { LogoFooter } from "../../assets/Logos/LogoFooter";
 
 export const Footer = () => {
   return (

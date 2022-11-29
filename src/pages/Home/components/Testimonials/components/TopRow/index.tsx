@@ -12,10 +12,6 @@ import {
 } from "../../../../../../styles/global";
 
 import {
-  TestimonialsCards
-} from "../TestimonialCard";
-
-import {
   ArrowLeft,
   ArrowRight
 } from "phosphor-react";
@@ -47,8 +43,6 @@ export const TopRow = () => {
             </ButtonArrow>
           </Arrows>
         </TopRowMain>
-
-        <TestimonialsCards />
       </TopRowContainer>
     </>
   );

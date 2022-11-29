@@ -17,5 +17,5 @@ export const LogoContainer = styled.div`
   justify-content: flex-start;
   flex-direction: column;
 
-  gap: 1rem;
+  gap: 2rem;
 `;

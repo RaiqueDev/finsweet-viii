@@ -44,17 +44,6 @@ export const SpotifyContainer = styled.div`
   }
 `;
 
-export const AudioTrackImgContainer = styled.div`
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-
-  svg {
-    width: 100%;
-  }
-`;
-
 export const MaskGroupContainer = styled.div`
   width: 100%;
 `;
@@ -127,40 +116,17 @@ export const ImageTeamMembersContainer = styled.div<ImageTeamMembersProps>`
   `}
 `;
 
-interface ImgBlogsProps {
-  variant?: 'ImgBlogs1' | 'ImgBlogs2' | 'ImgBlogs3' | 'ImgBlogs4' | 'ImgBlogs5' | 'ImgBlogs6';
-}
 
-export const ImgBlogs = styled.div<ImgBlogsProps>`
-  width: 100%;
-  max-width: 26rem;
-  height: 16rem;
+// Logo Footer
 
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+export const LogoFooterContainer = styled.div`
+  width: 200px;
+  height: 44px;
 
-  ${props => props.variant === 'ImgBlogs1' && css`
-    background-image: url('https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&');
-  `}
+  background-color: orange;
 
-  ${props => props.variant === 'ImgBlogs2' && css`
-    background-image: url('https://images.pexels.com/photos/3182747/pexels-photo-3182747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  `}
-
-    ${props => props.variant === 'ImgBlogs3' && css`
-    background-image: url('https://images.pexels.com/photos/3182749/pexels-photo-3182749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  `}
-
-  ${props => props.variant === 'ImgBlogs4' && css`
-    background-image: url('https://images.pexels.com/photos/3182833/pexels-photo-3182833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  `}
-
-  ${props => props.variant === 'ImgBlogs5' && css`
-    background-image: url('https://images.pexels.com/photos/3184585/pexels-photo-3184585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  `}
-
-  ${props => props.variant === 'ImgBlogs6' && css`
-    background-image: url('https://images.pexels.com/photos/3182742/pexels-photo-3182742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  `}
+  svg {
+    width: 100%;
+    height: 100%;
+  }
 `;

@@ -1,10 +1,10 @@
 import {
-  Logo1,
-  Logo2,
-  Logo3,
-  Logo4,
-  Logo5
-} from "../../../../assets/LogosSponsors";
+  LogoSponsors_01,
+  LogoSponsors_02,
+  LogoSponsors_03,
+  LogoSponsors_04,
+  LogoSponsors_05
+} from '../../../../assets/Logos/LogoSponsors';
 
 import {
   LogosSponsorsMain,
@@ -16,11 +16,11 @@ export const LogosSponsors = () => {
     <>
       <LogosSponsorsContainer>
         <LogosSponsorsMain>
-          <Logo1 />
-          <Logo2 />
-          <Logo3 />
-          <Logo4 />
-          <Logo5 />
+          <LogoSponsors_01 />
+          <LogoSponsors_02 />
+          <LogoSponsors_03 />
+          <LogoSponsors_04 />
+          <LogoSponsors_05 />
         </LogosSponsorsMain>
       </LogosSponsorsContainer>
     </>

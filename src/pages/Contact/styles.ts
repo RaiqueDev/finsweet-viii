@@ -22,5 +22,12 @@ export const ContactMain = styled.main`
   max-width: 80rem;
   
   display: flex;
+  gap: 2rem;
+
+  @media (max-width: 64rem) {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 `;
  

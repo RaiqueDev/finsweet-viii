@@ -4,13 +4,16 @@ import {
 } from "./styles";
 
 import {
-  ApplePodcastFooter,
   GooglePodcastFooter,
   SoundCloudFooter,
   SpotifyFooter
 } from "../../../../assets/SocialLogo";
 
 import { HeadingH4 } from "../../../../styles/global";
+
+import {
+  LogoFooter_ApplePodcast, LogoFooter_GooglePodcast, LogoFooter_SoundCloud, LogoFooter_Spotify
+} from "../../../../assets/Logos/LogoSubscribe";
 
 export const Subscribe = () => {
   return (
@@ -21,10 +24,10 @@ export const Subscribe = () => {
         </HeadingH4>
 
         <LogoContainer>
-          <ApplePodcastFooter />
-          <GooglePodcastFooter />
-          <SoundCloudFooter />
-          <SpotifyFooter />
+          <LogoFooter_ApplePodcast />
+          <LogoFooter_GooglePodcast />
+          <LogoFooter_SoundCloud />
+          <LogoFooter_Spotify />
         </LogoContainer>
       </SubscribeContainer>
     </>

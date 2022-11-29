@@ -15,33 +15,11 @@ export const ListMain = styled.main`
 
   @media (max-width: 64rem) {
     grid-template-columns: repeat(2, 2fr);
+    gap: 2rem;
   }
 
   @media (max-width: 48rem) {
     grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
   }
-`;
-
-export const ListItem = styled.div`
-  width: 100%;
-  max-width: 26rem;
-`;
-
-export const ItemImage = styled.div`
-  img {
-    width: 100%;
-    height: 16rem;
-    background-size: auto;
-    background-repeat: no-repeat;
-  }
-`;
-
-export const ItemContent = styled.div`
-  width: 100%;
-  margin: 2rem 0 0 0;
-
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 1rem;
 `;

@@ -8,9 +8,7 @@ import {
   HeadingH3
 } from '../../styles/global';
 
-import {
-  BrandsSocial
-} from './components/BrandsSocial';
+import { BrandsLogo } from './components/BrandsLogo';
 
 export const Brands = () => {
   return (
@@ -23,7 +21,7 @@ export const Brands = () => {
             </HeadingH3>
           </BrandsText>
 
-          <BrandsSocial />
+          <BrandsLogo />
         </BrandsMain>
       </BrandsContainer>
     </>

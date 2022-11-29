@@ -1,25 +1,5 @@
 import styled from "styled-components";
 
-export const TestimonialCardContainer = styled.div`
-  width: 100%;
-
-  margin: 4rem 0 0 0;
-
-  display: grid;
-  grid-template-columns: repeat(3, 3fr);
-  justify-items: center;
-
-  gap: 1rem;
-
-  @media (max-width: 64rem) {
-    grid-template-columns: repeat(2, 2fr);
-  }
-
-  @media (max-width: 48rem) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-`;
-
 export const Card = styled.div`
   width: 100%;
   max-width: 26rem;
@@ -43,15 +23,11 @@ export const Person = styled.div`
 `;
 
 export const ImgPerson = styled.div`
-  width: 5rem;
-  height: 5rem;
-
-  border-radius: 99px;
-
-  background-image: url('https://images.pexels.com/photos/3310695/pexels-photo-3310695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  img {
+    border-radius: 99px;
+    width: 5rem;
+    height: 5rem;
+  }
 `;
 
 export const NameStars = styled.div`
