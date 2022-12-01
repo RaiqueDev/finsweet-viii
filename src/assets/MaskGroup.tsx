@@ -1,9 +1,9 @@
-import { MaskGroupContainer } from "./styles";
+import { LogoContainer } from "./styles";
 
 export const MaskGroup = () => {
   return (
     <>
-      <MaskGroupContainer>
+      <LogoContainer>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="416"
@@ -33,7 +33,7 @@ export const MaskGroup = () => {
             ></path>
           </g>
         </svg>
-      </MaskGroupContainer>
+      </LogoContainer>
     </>
   );
 }
