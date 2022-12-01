@@ -3,16 +3,13 @@ import {
   SubscribeContainer
 } from "./styles";
 
-import {
-  GooglePodcastFooter,
-  SoundCloudFooter,
-  SpotifyFooter
-} from "../../../../assets/SocialLogo";
-
 import { HeadingH4 } from "../../../../styles/global";
 
 import {
-  LogoFooter_ApplePodcast, LogoFooter_GooglePodcast, LogoFooter_SoundCloud, LogoFooter_Spotify
+  LogoFooter_ApplePodcast,
+  LogoFooter_GooglePodcast,
+  LogoFooter_SoundCloud,
+  LogoFooter_Spotify
 } from "../../../../assets/Logos/LogoSubscribe";
 
 export const Subscribe = () => {
