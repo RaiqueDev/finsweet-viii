@@ -31,13 +31,8 @@ export const NavbarRight = styled.div`
   @media (max-width: 64rem) {
     max-width: 10rem;
   }
-`;
-
-export const Menu = styled.div`
-  display: none;
-  cursor: pointer;
 
   @media (max-width: 64rem) {
-    display: flex;
+    justify-content: flex-end;
   }
 `;

@@ -1,19 +1,26 @@
 import { NavLink } from "react-router-dom";
-import { List } from "phosphor-react";
 
 import {
-  Menu,
   NavbarContainer,
   NavbarMain,
   NavbarRight
 } from "./styles";
 
-import { LinksList } from "./Components/LinksList";
 
 import { Logo } from "../../assets/Logos/Logo";
 import { LogoSocialNav } from "../../assets/Logos/LogoSocialNav";
+import { Menu } from "./Components/Menu";
+import { useState } from "react";
+import { LinksList } from "./Components/LinkList";
+import { Toggle } from "./Components/Toggle";
 
 export const Navbar = () => {
+  const [open, setOpen] = useState(false)
+
+  const handleOpen = () => {
+    setOpen(!open)
+  }
+
   return (
     <>
       <NavbarContainer>
@@ -26,9 +33,8 @@ export const Navbar = () => {
             <LinksList />
             <LogoSocialNav />
 
-            <Menu>
-              <List size={24} weight="duotone" />
-            </Menu>
+            {open ? <Menu handleOpen={handleOpen} /> : null}  
+            <Toggle handleOpen={handleOpen} />
           </NavbarRight>
         </NavbarMain>
       </NavbarContainer>

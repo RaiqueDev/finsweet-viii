@@ -6,3 +6,11 @@ export const LogoContainer = styled.div`
     height: 100%;
   }
 `;
+
+export const LogoSocialNavContainer = styled.div`
+  display: flex;
+
+  @media (max-width: 30rem) {
+    display: none;
+  }
+`;

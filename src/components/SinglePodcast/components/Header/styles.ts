@@ -26,8 +26,7 @@ export const PodcastImage = styled.div`
   max-width: 38.5rem;
   height: 25rem;
 
-  background-color: springgreen;
-  background-image: url('https://images.pexels.com/photos/2284233/pexels-photo-2284233.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-image: url('https://images.pexels.com/photos/12216995/pexels-photo-12216995.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
   background-size: cover;
   background-position: center;
 `;

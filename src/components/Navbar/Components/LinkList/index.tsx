@@ -4,7 +4,7 @@ import {
   LinksListContainer
 } from './styles';
 
-import { HeadingH5 } from '../../../styles/global';
+import { HeadingH4, HeadingH5 } from '../../../../styles/global';
 
 export const LinksList = () => {
   return (

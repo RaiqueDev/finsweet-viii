@@ -87,7 +87,7 @@ export const HeadingH4 = styled.h4<HeadingProps>`
 
 
 export const HeadingH5 = styled.h5<HeadingProps>`
-  font: 500 .875rem Poppins, sans-serif;
+  font: 500 .975rem Poppins, sans-serif;
   line-height: 150%;
 
   color: ${props => props.theme.black};
@@ -179,6 +179,9 @@ export const Button = styled.button<ButtonProps>`
   ${props => props.variant === 'Primary_Button' && css`
     background-color: ${props => props.theme.blue};
     color: ${props => props.theme.white};
+
+    gap: .5rem;
+    line-height: 0;
 
     &:hover {
       background-color: #3E2DB2;
