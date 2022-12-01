@@ -11,6 +11,9 @@ import {
 } from "../../../../../styles/global";
 
 import { PlayCircle } from "phosphor-react";
+import { Link } from "react-router-dom";
+import { SingleBlog } from '../../../../SingleBlog';
+import { SinglePodcast } from "../../../../SinglePodcast";
 
 interface ItemListProps {
   id?: number;

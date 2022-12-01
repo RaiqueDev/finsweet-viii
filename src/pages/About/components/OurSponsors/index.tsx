@@ -9,38 +9,38 @@ import {
 } from "../../../../styles/global";
 
 import {
-  Sponsor1,
-  Sponsor2,
-  Sponsor3,
-  Sponsor4,
-  Sponsor5
-} from "../../../../assets/sponsorIcons";
-
-import {
   SponsorLogo,
   SponsorBecomeASponsor
 } from "./components/SponsorLogo";
 
+import {
+  LogoSponsors_black_01,
+  LogoSponsors_black_02,
+  LogoSponsors_black_03,
+  LogoSponsors_black_04,
+  LogoSponsors_black_05
+} from "../../../../assets/Logos/LogoSponsors";
+
 const sponsorlogos = [
   {
     id: 1,
-    logo: <Sponsor1 />
+    logo: <LogoSponsors_black_01 />
   },
   {
     id: 2,
-    logo: <Sponsor2 />
+    logo: <LogoSponsors_black_02 />
   },
   {
     id: 3,
-    logo: <Sponsor3 />
+    logo: <LogoSponsors_black_03 />
   },
   {
     id: 4,
-    logo: <Sponsor4 />
+    logo: <LogoSponsors_black_04 />
   },
   {
     id: 5,
-    logo: <Sponsor5 />
+    logo: <LogoSponsors_black_05 />
   },
 ];
 

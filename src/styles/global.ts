@@ -172,6 +172,10 @@ export const Button = styled.button<ButtonProps>`
 
   font: 500 1rem Inter, sans-serif;
 
+  span {
+    color: ${props => props.theme.green};
+  }
+
   ${props => props.variant === 'Primary_Button' && css`
     background-color: ${props => props.theme.blue};
     color: ${props => props.theme.white};

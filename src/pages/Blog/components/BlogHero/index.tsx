@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Caption, HeadingH2, Body, Button } from '../../../../styles/global';
 import {
   BlogHeroContainer,
@@ -26,9 +27,11 @@ export const BlogHero = () => {
               erat, sed diam voluptua.
             </Body>
 
-            <Button variant='Listen'>
-              Read Now
-            </Button>
+            <Link to="/singleblog">
+              <Button variant='Listen'>
+                Read Now
+              </Button>
+            </Link>
           </BlogHeroContent>
 
           <BlogHeroImg />
