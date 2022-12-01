@@ -29,63 +29,63 @@ export const Menu = ({ handleOpen }: any) => {
 
         <MenuMain>
           <CloseToggle onClick={handleOpen}>
-            <MenuLink>
-              <NavLink to="/" style={{ textDecoration: 'none', color: '#14142B' }}>
+            <NavLink to="/" style={{ textDecoration: 'none', color: '#14142B' }}>
+              <MenuLink>
                 HOME
-              </NavLink>
 
-              <CaretRight size={20} color="#14142B" weight="bold" />
-            </MenuLink>
+                <CaretRight size={20} color="#14142B" weight="bold" />
+              </MenuLink>
+            </NavLink>
           </CloseToggle>
 
           <CloseToggle onClick={handleOpen}>
-            <MenuLink>
-              <NavLink to="/podcasts" style={{ textDecoration: 'none', color: '#14142B' }}>
+            <NavLink to="/podcasts" style={{ textDecoration: 'none', color: '#14142B' }}>
+              <MenuLink>
                 PODCASTS
-              </NavLink>
 
-              <CaretRight size={20} color="#14142B" weight="bold" />
-            </MenuLink>
+                <CaretRight size={20} color="#14142B" weight="bold" />
+              </MenuLink>
+            </NavLink>
           </CloseToggle>
 
           <CloseToggle onClick={handleOpen}>
-            <MenuLink>
-              <NavLink to="/host" style={{ textDecoration: 'none', color: '#14142B' }}>
+            <NavLink to="/host" style={{ textDecoration: 'none', color: '#14142B' }}>
+              <MenuLink>
                 HOST
-              </NavLink>
 
-              <CaretRight size={20} color="#14142B" weight="bold" />
-            </MenuLink>
+                <CaretRight size={20} color="#14142B" weight="bold" />
+              </MenuLink>
+            </NavLink>
           </CloseToggle>
 
           <CloseToggle onClick={handleOpen}>
-            <MenuLink>
-              <NavLink to="/about" style={{ textDecoration: 'none', color: '#14142B' }}>
+            <NavLink to="/about" style={{ textDecoration: 'none', color: '#14142B' }}>
+              <MenuLink>
                 ABOUT
-              </NavLink>
 
-              <CaretRight size={20} color="#14142B" weight="bold" />
-            </MenuLink>
+                <CaretRight size={20} color="#14142B" weight="bold" />
+              </MenuLink>
+            </NavLink>
           </CloseToggle>
 
           <CloseToggle onClick={handleOpen}>
-            <MenuLink>
-              <NavLink to="/blog" style={{ textDecoration: 'none', color: '#14142B' }}>
+            <NavLink to="/blog" style={{ textDecoration: 'none', color: '#14142B' }}>
+              <MenuLink>
                 BLOG
-              </NavLink>
 
-              <CaretRight size={20} color="#14142B" weight="bold" />
-            </MenuLink>
+                <CaretRight size={20} color="#14142B" weight="bold" />
+              </MenuLink>
+            </NavLink>
           </CloseToggle>
 
           <CloseToggle onClick={handleOpen}>
-            <MenuLink>
-              <NavLink to="/contact" style={{ textDecoration: 'none', color: '#14142B' }}>
+            <NavLink to="/contact" style={{ textDecoration: 'none', color: '#14142B' }}>
+              <MenuLink>
                 CONTACT
-              </NavLink>
 
-              <CaretRight size={20} color="#14142B" weight="bold" />
-            </MenuLink>
+                <CaretRight size={20} color="#14142B" weight="bold" />
+              </MenuLink>
+            </NavLink>
           </CloseToggle>
         </MenuMain>
       </MenuContainer>
