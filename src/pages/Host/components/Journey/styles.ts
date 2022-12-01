@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import LinesJourney from '../../../../assets/LinesJourney.svg'
+import LinesJourney from '../../../../assets/ImgSvg/LinesJourney.svg'
 
 export const JourneyContainer = styled.div`
   width: 100%;

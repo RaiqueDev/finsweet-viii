@@ -1,10 +1,16 @@
-import { Content, Caption, HeadingH2, Body, Button } from '../../../../styles/global';
-
 import {
   HeaderContainer,
   HeaderImg,
   HeaderMain
 } from "./styles";
+
+import {
+  Content,
+  Caption,
+  HeadingH2,
+  Body,
+  Button
+} from '../../../../styles/global';
 
 export const Header = () => {
   return (

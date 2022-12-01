@@ -1,5 +1,4 @@
 import {
-  Author,
   HeaderContainer,
   HeaderMain,
   PodcastImage

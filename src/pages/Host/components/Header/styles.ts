@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import HeaderLines from '../../../../assets/HeaderLines.svg';
-import ImageHeader from '../../../../assets/ImageHeader.jpg';
+import HeaderLines from '../../../../assets/ImgSvg/HeaderLines.svg';
+import ImageHeader from '../../../../assets/ImgSvg/ImageHeader.jpg';
 
 export const HeaderContainer = styled.div`
   width: 100%;

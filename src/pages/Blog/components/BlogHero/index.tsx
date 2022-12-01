@@ -27,7 +27,7 @@ export const BlogHero = () => {
               erat, sed diam voluptua.
             </Body>
 
-            <Link to="/singleblog">
+            <Link to="/singleblog" style={{ textDecoration: 'none' }}>
               <Button variant='Listen'>
                 Read Now
               </Button>

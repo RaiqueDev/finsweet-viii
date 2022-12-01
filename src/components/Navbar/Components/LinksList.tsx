@@ -11,31 +11,31 @@ export const LinksList = () => {
     <>
       <LinksListContainer>
         <nav>
-          <NavLink to="/podcasts">
+          <NavLink to="/podcasts" style={{ textDecoration: 'none' }}>
             <HeadingH5>
               Podcast
             </HeadingH5>
           </NavLink>
 
-          <NavLink to="/host">
+          <NavLink to="/host" style={{ textDecoration: 'none' }}>
             <HeadingH5>
               Host
             </HeadingH5>
           </NavLink>
 
-          <NavLink to="/about">
+          <NavLink to="/about" style={{ textDecoration: 'none' }}>
             <HeadingH5>
               About
             </HeadingH5>
           </NavLink>
 
-          <NavLink to="/blog">
+          <NavLink to="/blog" style={{ textDecoration: 'none' }}>
             <HeadingH5>
               Blog
             </HeadingH5>
           </NavLink>
 
-          <NavLink to="/contact">
+          <NavLink to="/contact" style={{ textDecoration: 'none' }}>
             <HeadingH5>
               Contact
             </HeadingH5>

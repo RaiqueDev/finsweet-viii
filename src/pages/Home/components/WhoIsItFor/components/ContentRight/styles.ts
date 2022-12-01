@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import LinesRight from '../../../../../../assets/LinesRight.svg';
+import LinesRight from '../../../../../../assets/ImgSvg/LinesRight.svg';
 
 export const ContentRightContainer = styled.div`
   width: 100%;

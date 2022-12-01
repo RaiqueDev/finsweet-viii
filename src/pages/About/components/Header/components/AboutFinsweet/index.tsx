@@ -1,4 +1,4 @@
-import { AboutImg } from "../../../../../../assets/AboutImg";
+import { AboutImg } from "../../../../../../assets/ImgSvg/AboutImg";
 
 import {
   AboutFinsweetContainer

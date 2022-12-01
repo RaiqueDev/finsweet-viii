@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import ImgSubscribe from '../../../../assets/ImgSubscribe.jpg';
+import ImgSubscribe from '../../../../assets/ImgSvg/ImgSubscribe.jpg';
 
 export const SubscribeContainer = styled.div`
   width: 100%;

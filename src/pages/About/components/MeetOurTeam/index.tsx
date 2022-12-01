@@ -9,13 +9,12 @@ import {
   ImageRehabWalls,
   ImageRobertMill,
   ImageSteveWinston
-} from '../../../../assets/TeamMembersAssets';
+} from '../../../../assets/TeamMembersPerson';
 
 import { HeadingH2 } from "../../../../styles/global";
 
-import { IconSocial } from "../../../../assets/Icon";
-
 import { TeamMember } from "./components/TeamMember";
+import { IconSocial } from "../../../../assets/Logos/LogoIcon";
 
 const teammembers = [
   {

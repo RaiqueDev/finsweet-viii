@@ -1,4 +1,3 @@
-import { HeadingH4, HeadingH5 } from '../../../../../../styles/global';
 import {
   CategoriesContainer,
   CategoriesMain,
@@ -10,6 +9,7 @@ import {
 import {
   CategoriesButtons,
   HeadingH2,
+  HeadingH5
 } from "../../../../../../styles/global";
 
 export const TopRow = () => {

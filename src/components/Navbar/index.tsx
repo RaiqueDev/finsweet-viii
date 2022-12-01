@@ -11,7 +11,7 @@ import {
 import { LinksList } from "./Components/LinksList";
 
 import { Logo } from "../../assets/Logos/Logo";
-import { Social } from "../../assets/Social";
+import { LogoSocialNav } from "../../assets/Logos/LogoSocialNav";
 
 export const Navbar = () => {
   return (
@@ -24,7 +24,7 @@ export const Navbar = () => {
 
           <NavbarRight>
             <LinksList />
-            <Social />
+            <LogoSocialNav />
 
             <Menu>
               <List size={24} weight="duotone" />

@@ -1,18 +1,9 @@
-import {
-  ApplePodcastContainer,
-  ApplePodcastFooterContainer,
-  GooglePodcastContainer,
-  GooglePodcastFooterContainer,
-  SoundCloudContainer,
-  SoundCloudFooterContainer,
-  SpotifyContainer,
-  SpotifyFooterContainer
-} from './styles';
+import { LogoContainer } from "../styles";
 
 export const ApplePodcast = () => {
   return (
     <>
-      <ApplePodcastContainer>
+      <LogoContainer>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="183"
@@ -51,7 +42,7 @@ export const ApplePodcast = () => {
             </clipPath>
           </defs>
         </svg>
-      </ApplePodcastContainer>
+      </LogoContainer>
     </>
   );
 }
@@ -59,7 +50,7 @@ export const ApplePodcast = () => {
 export const GooglePodcast = () => {
   return (
     <>
-      <GooglePodcastContainer>
+      <LogoContainer>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="196"
@@ -158,7 +149,7 @@ export const GooglePodcast = () => {
             </clipPath>
           </defs>
         </svg>
-      </GooglePodcastContainer>
+      </LogoContainer>
     </>
   );
 }
@@ -166,7 +157,7 @@ export const GooglePodcast = () => {
 export const SoundCloud = () => {
   return (
     <>
-      <SoundCloudContainer>
+      <LogoContainer>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="174"
@@ -205,7 +196,7 @@ export const SoundCloud = () => {
             </clipPath>
           </defs>
         </svg>
-      </SoundCloudContainer>
+      </LogoContainer>
     </>
   );
 }
@@ -213,7 +204,7 @@ export const SoundCloud = () => {
 export const Spotify = () => {
   return (
     <>
-      <SpotifyContainer>
+      <LogoContainer>
         <svg xmlns="http://www.w3.org/2000/svg" width="128" height="32" fill="none" viewBox="0 0 128 32">
           <g clip-path="url(#a)">
             <path fill="#14142B" d="M125.506 15.509a2.136 2.136 0 0 1-1.512-.616 2.098 2.098 0 0 1-.621-1.5c0-.564.227-1.106.63-1.505a2.15 2.15 0 0 1 1.517-.624 2.139 2.139 0 0 1 1.513.616 2.099 2.099 0 0 1 .62 1.5c0 .564-.226 1.106-.629 1.505-.402.4-.948.624-1.518.624Zm0-4.035a1.949 1.949 0 0 0-1.08.318 1.918 1.918 0 0 0-.832 1.972c.074.374.258.717.53.987a1.943 1.943 0 0 0 2.115.413 1.91 1.91 0 0 0 1.188-1.784 1.892 1.892 0 0 0-.14-.729 1.912 1.912 0 0 0-1.767-1.177h-.014Zm.48 2.13.593.84h-.508l-.537-.77h-.465v.77h-.438v-2.227h1.002c.523 0 .877.266.877.7a.705.705 0 0 1-.509.686h-.015Zm-.367-1.009h-.55v.7h.55c.282 0 .452-.126.452-.35 0-.224-.155-.35-.438-.35h-.014Zm-18.461-1.288v-.42c0-1.233.466-1.78 1.526-1.78a5.082 5.082 0 0 1 1.723.322.243.243 0 0 0 .198 0 .22.22 0 0 0 .085-.182V6.684a.227.227 0 0 0-.156-.224 8.813 8.813 0 0 0-2.528-.28c-2.825 0-4.237 1.568-4.237 4.524v.645h-1.413a.214.214 0 0 0-.15.061.208.208 0 0 0-.062.149v2.605a.226.226 0 0 0 .212.224h1.413v10.338a.21.21 0 0 0 .211.21h2.981a.224.224 0 0 0 .225-.21V14.318h2.825l4.351 10.324c-.494 1.093-.989 1.303-1.653 1.303a3.578 3.578 0 0 1-1.666-.462.215.215 0 0 0-.184 0 .189.189 0 0 0-.127.112l-.946 2.227a.222.222 0 0 0 .099.28 6.33 6.33 0 0 0 3.248.827c2.232 0 3.475-1.037 4.577-3.824l5.268-13.504a.226.226 0 0 0 0-.21.23.23 0 0 0-.081-.064.23.23 0 0 0-.102-.02h-3.249a.253.253 0 0 0-.125.041.25.25 0 0 0-.088.099l-3.234 9.175-3.489-9.175a.223.223 0 0 0-.211-.14h-5.241Zm-6.751-.014H97.37c-.125 0-.226.1-.226.224v13.14c0 .123.101.223.226.223h3.037c.125 0 .226-.1.226-.224v-13.14a.225.225 0 0 0-.226-.223Zm-1.505-5.358a2.133 2.133 0 0 0-1.181.347 2.087 2.087 0 0 0-.336 3.237 2.128 2.128 0 0 0 2.312.463c.388-.159.72-.429.954-.775.234-.346.359-.753.359-1.17a2.091 2.091 0 0 0-1.298-1.942 2.125 2.125 0 0 0-.81-.16Zm-3.396 5.357h-3.348v-3.39a.223.223 0 0 0-.212-.224H88.91a.227.227 0 0 0-.16.066.223.223 0 0 0-.065.158v3.39h-1.498a.212.212 0 0 0-.212.21v2.592a.223.223 0 0 0 .212.224H88.6v6.696c0 2.704 1.412 4.076 4.04 4.076a5.43 5.43 0 0 0 2.824-.7.197.197 0 0 0 .113-.182v-2.466a.239.239 0 0 0-.098-.196.213.213 0 0 0-.227 0 3.954 3.954 0 0 1-1.78.42c-.974 0-1.412-.434-1.412-1.4v-6.248h3.348a.227.227 0 0 0 .226-.224v-2.592a.223.223 0 0 0-.127-.21Zm-16.018-.28a7.189 7.189 0 0 0-3.944 1.262 7.099 7.099 0 0 0-2.575 3.22 7.034 7.034 0 0 0-.34 4.096 7.073 7.073 0 0 0 2.008 3.595 7.167 7.167 0 0 0 3.683 1.885 7.201 7.201 0 0 0 4.118-.459 7.132 7.132 0 0 0 3.17-2.648 7.047 7.047 0 0 0 1.154-3.947 7.05 7.05 0 0 0-.584-2.713 7.096 7.096 0 0 0-1.588-2.285 7.168 7.168 0 0 0-2.35-1.507 7.218 7.218 0 0 0-2.752-.499Zm0 11.109a3.897 3.897 0 0 1-2.777-1.218 3.832 3.832 0 0 1-1.037-2.83 3.71 3.71 0 0 1 1.011-2.796 3.8 3.8 0 0 1 2.746-1.183 3.911 3.911 0 0 1 2.796 1.202 3.846 3.846 0 0 1 1.06 2.832 3.725 3.725 0 0 1-1.024 2.815 3.81 3.81 0 0 1-2.775 1.177ZM64.84 11.012a5.376 5.376 0 0 0-2.356.528 5.33 5.33 0 0 0-1.88 1.504v-1.541a.224.224 0 0 0-.227-.21h-3.065a.227.227 0 0 0-.226.21v17.09a.227.227 0 0 0 .226.224h3.037c.06 0 .118-.024.16-.066a.223.223 0 0 0 .066-.158v-5.366a5.48 5.48 0 0 0 4.238 1.919c3.178 0 6.398-2.423 6.398-7.074 0-4.65-3.192-7.06-6.37-7.06Zm2.826 7.004a3.615 3.615 0 0 1-.898 2.788 3.673 3.673 0 0 1-2.676 1.233 3.796 3.796 0 0 1-2.688-1.238 3.73 3.73 0 0 1-.956-2.783 3.708 3.708 0 0 1 .962-2.773 3.769 3.769 0 0 1 2.682-1.233 3.725 3.725 0 0 1 2.711 1.24 3.64 3.64 0 0 1 .905 2.822l-.042-.056Zm-17.571-3.684c-3.39-.812-3.997-1.4-3.997-2.55 0-1.148 1.059-1.876 2.641-1.876a7.763 7.763 0 0 1 4.633 1.75.186.186 0 0 0 .17 0 .24.24 0 0 0 .14-.083l1.667-2.326a.237.237 0 0 0 0-.294 10.053 10.053 0 0 0-6.525-2.241c-3.659 0-6.215 2.185-6.215 5.295 0 3.348 2.203 4.539 6.017 5.449 3.249.742 3.8 1.4 3.8 2.48 0 1.078-1.116 1.989-2.825 1.989a7.802 7.802 0 0 1-5.396-2.214.27.27 0 0 0-.17 0 .34.34 0 0 0-.155.084l-1.893 2.172a.223.223 0 0 0 0 .308 11.127 11.127 0 0 0 7.486 2.802c3.941 0 6.498-2.144 6.498-5.45-.057-2.76-1.752-4.3-5.876-5.295Z" />
@@ -225,7 +216,7 @@ export const Spotify = () => {
             </clipPath>
           </defs>
         </svg>
-      </SpotifyContainer>
+      </LogoContainer>
     </>
   );
 }
@@ -235,7 +226,7 @@ export const Spotify = () => {
 export const ApplePodcastFooter = () => {
   return (
     <>
-      <ApplePodcastFooterContainer>
+      <LogoContainer>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="183"
@@ -274,7 +265,7 @@ export const ApplePodcastFooter = () => {
             </clipPath>
           </defs>
         </svg>
-      </ApplePodcastFooterContainer>
+      </LogoContainer>
     </>
   );
 }
@@ -282,7 +273,7 @@ export const ApplePodcastFooter = () => {
 export const GooglePodcastFooter = () => {
   return (
     <>
-      <GooglePodcastFooterContainer>
+      <LogoContainer>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="196"
@@ -381,7 +372,7 @@ export const GooglePodcastFooter = () => {
             </clipPath>
           </defs>
         </svg>
-      </GooglePodcastFooterContainer>
+      </LogoContainer>
     </>
   );
 }
@@ -389,7 +380,7 @@ export const GooglePodcastFooter = () => {
 export const SoundCloudFooter = () => {
   return (
     <>
-      <SoundCloudFooterContainer>
+      <LogoContainer>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="174"
@@ -428,7 +419,7 @@ export const SoundCloudFooter = () => {
             </clipPath>
           </defs>
         </svg>
-      </SoundCloudFooterContainer>
+      </LogoContainer>
     </>
   );
 }
@@ -436,7 +427,7 @@ export const SoundCloudFooter = () => {
 export const SpotifyFooter = () => {
   return (
     <>
-      <SpotifyFooterContainer>
+      <LogoContainer>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="128"
@@ -460,7 +451,7 @@ export const SpotifyFooter = () => {
             </clipPath>
           </defs>
         </svg>
-      </SpotifyFooterContainer>
+      </LogoContainer>
     </>
   );
 }

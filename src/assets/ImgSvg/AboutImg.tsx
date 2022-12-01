@@ -1,4 +1,4 @@
-import { LogoContainer } from "./styles";
+import { LogoContainer } from "../styles";
 
 export const AboutImg = () => {
   return (

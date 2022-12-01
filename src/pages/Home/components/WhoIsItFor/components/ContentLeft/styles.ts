@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import Lines from '../../../../../../assets/Lines.svg';
+import Lines from '../../../../../../assets/ImgSvg/Lines.svg';
 
 export const ContentLeftContainer = styled.div`
   width: 100%;

@@ -1,4 +1,3 @@
-import { Button } from '../../../../styles/global';
 import {
   HeaderBox,
   HeaderContainer,
@@ -9,9 +8,12 @@ import {
 import {
   Caption,
   HeadingH2,
-  Body
+  Body,
+  Button
 } from '../../../../styles/global';
+
 import { PlayCircle } from 'phosphor-react';
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -35,11 +37,13 @@ export const Header = () => {
                 lifts the horizon
               </Body>
 
-              <Button variant='Listen_White'>
-                <PlayCircle size={32} color="#1ad993" weight="fill" />
+              <Link to="/singlepodcast" style={{ textDecoration: 'none' }}>
+                <Button variant='Listen_White'>
+                  <PlayCircle size={32} color="#1ad993" weight="fill" />
 
-                Listen Now
-              </Button>
+                  Listen Now
+                </Button>
+              </Link>
             </Content>
           </HeaderBox>
         </HeaderMain>

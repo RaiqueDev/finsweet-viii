@@ -1,4 +1,4 @@
-import { LogoAudioTrack } from "../../../../../../assets/ImgSvg/LogoAudioTrack";
+import { LogoAudioTrack } from "../../../../../../assets/Logos/LogoAudioTrack";
 
 import { AudioTrackContainer } from "./styles";
 

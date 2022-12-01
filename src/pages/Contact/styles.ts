@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import LineContact from '../../assets/LineContact.svg';
+import LineContact from '../../assets/ImgSvg/LineContact.svg';
 
 export const ContactContainer = styled.div`
   width: 100%;

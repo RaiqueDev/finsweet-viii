@@ -1,4 +1,4 @@
-export const Social = () => {
+export const LogoSocialContact = () => {
   return (
     <>
       <svg

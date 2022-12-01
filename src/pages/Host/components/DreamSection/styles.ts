@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import DreamSectionLine from '../../../../assets/DreamSectionLine.svg';
+import DreamSectionLine from '../../../../assets/ImgSvg/DreamSectionLine.svg';
 
 export const DreamSectionContainer = styled.div`
   width: 100%;

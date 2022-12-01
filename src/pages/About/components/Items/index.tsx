@@ -9,7 +9,7 @@ import {
   IconPodcast,
   IconSubs,
   IconViews
-} from '../../../../assets/Icon';
+} from '../../../../assets/Logos/LogoIcon';
 
 const items = [
   {

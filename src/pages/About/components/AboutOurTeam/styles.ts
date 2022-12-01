@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import AboutOurTeamLine from "../../../../assets/AboutOurTeamLine.svg";
+import AboutOurTeamLine from "../../../../assets/ImgSvg/AboutOurTeamLine.svg";
 
 
 export const AboutOurTeamContainer = styled.div`

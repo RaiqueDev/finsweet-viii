@@ -6,7 +6,7 @@ import {
 } from "./styles";
 
 import { HeadingH4 } from '../../../styles/global';
-import { Social } from "../../../assets/Social";
+
 
 import {
   LogoBrands_ApplePodcast,
@@ -14,6 +14,7 @@ import {
   LogoBrands_SoundCloud,
   LogoBrands_Spotify
 } from "../../../assets/Logos/LogoBrands";
+import { LogoSocialContact } from "../../../assets/Logos/LogoSocialContact";
 
 export const ContentRight = () => {
   return (
@@ -36,7 +37,7 @@ export const ContentRight = () => {
               Socials
             </HeadingH4>
 
-            <Social />
+            <LogoSocialContact />
           </SocialWrapper>
         </ContentRightMain>
       </ContentRightContainer>
