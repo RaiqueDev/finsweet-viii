@@ -24,7 +24,8 @@ const ContactSchema = Yup.object().shape({
     .required('Query Related is required'),
   message: Yup.string()
     .min(10, 'Write a little more')
-    .required('Message is required')
+        .max(50, 'Need to write more than that')
+    .required('Message is required'),
 });
 
 export const FormSchema = () => {
@@ -60,9 +61,6 @@ export const FormSchema = () => {
               ) : null}
 
               <FieldTextArea name="message" placeholder="Message" />
-              {errors.message && touched.message ? (
-                <ErrorMessage>{errors.message}</ErrorMessage>
-              ) : null}
 
               <Button
                 variant="Primary_Button"
