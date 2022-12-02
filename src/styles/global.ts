@@ -302,3 +302,12 @@ export const Content = styled.div`
     text-align: center;
   }
 `;
+
+export const LinkText = styled.h5`
+  font: 500 1rem Inter, sans-serif;
+  line-height: 150%;
+
+  color: ${props => props.theme.black};
+  
+  padding: .2rem;
+`;

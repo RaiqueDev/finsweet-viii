@@ -4,41 +4,78 @@ import {
   LinksListContainer
 } from './styles';
 
-import { HeadingH4, HeadingH5 } from '../../../../styles/global';
+import { LinkText } from '../../../../styles/global';
 
 export const LinksList = () => {
+
+  const disable = {
+    textDecoration: 'none',
+    borderBottom: '3px solid #fff',
+  };
+
+  const activeStyle = {
+    textDecoration: 'none',
+    borderBottom: '3px solid #503AE7',
+    borderRadius: "4px"
+  };
+
   return (
     <>
       <LinksListContainer>
         <nav>
-          <NavLink to="/podcasts" style={{ textDecoration: 'none' }}>
-            <HeadingH5>
+          <NavLink
+            to="/podcasts"
+            style={({ isActive }) =>
+              isActive ? activeStyle : disable
+            }>
+
+            <LinkText>
               Podcast
-            </HeadingH5>
+            </LinkText>
           </NavLink>
 
-          <NavLink to="/host" style={{ textDecoration: 'none' }}>
-            <HeadingH5>
+          <NavLink
+            to="/host"
+            style={({ isActive }) =>
+              isActive ? activeStyle : disable
+            }>
+
+            <LinkText>
               Host
-            </HeadingH5>
+            </LinkText>
           </NavLink>
 
-          <NavLink to="/about" style={{ textDecoration: 'none' }}>
-            <HeadingH5>
+          <NavLink
+            to="/about"
+            style={({ isActive }) =>
+              isActive ? activeStyle : disable
+            }>
+
+            <LinkText>
               About
-            </HeadingH5>
+            </LinkText>
           </NavLink>
 
-          <NavLink to="/blog" style={{ textDecoration: 'none' }}>
-            <HeadingH5>
+          <NavLink
+            to="/blog"
+            style={({ isActive }) =>
+              isActive ? activeStyle : disable
+            }>
+
+            <LinkText>
               Blog
-            </HeadingH5>
+            </LinkText>
           </NavLink>
 
-          <NavLink to="/contact" style={{ textDecoration: 'none' }}>
-            <HeadingH5>
+          <NavLink
+            to="/contact"
+            style={({ isActive }) =>
+              isActive ? activeStyle : disable
+            }>
+
+            <LinkText>
               Contact
-            </HeadingH5>
+            </LinkText>
           </NavLink>
         </nav>
       </LinksListContainer>
