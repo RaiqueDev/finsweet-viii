@@ -250,7 +250,7 @@ export const CategoriesButtons = styled.button<CategoriesButtonProps>`
   border: 0;
   cursor: pointer;
 
-  font: 700 1rem Inter, sans-serif;
+  font: 700 .875rem Inter, sans-serif;
 
   ${props => props.variant === 'Active' && css`
     background-color: ${props => props.theme.blue};

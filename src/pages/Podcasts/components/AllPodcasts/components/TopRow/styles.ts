@@ -40,6 +40,7 @@ export const CategoriesContainer = styled.div`
 
 export const CategoriesMain = styled.main`
   width: 100%;
+  max-width: 38.375rem;
 
   display: grid;
   grid-template-columns: repeat(4, 4fr);
@@ -47,6 +48,7 @@ export const CategoriesMain = styled.main`
   gap: 1rem;
 
   @media (max-width: 48rem) {
+    max-width: 100%;
     grid-template-columns: repeat(3, 3fr);
   }
 

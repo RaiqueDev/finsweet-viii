@@ -25,27 +25,19 @@ export const TopRow = () => {
             <CategoriesContainer>
               <CategoriesMain>
                 <CategoriesButtons variant="Active">
-                  <HeadingH5 variant='White'>
-                    All Podcasts
-                  </HeadingH5>
+                  All Podcasts
                 </CategoriesButtons>
 
                 <CategoriesButtons variant="Disable">
-                  <HeadingH5 variant='Gray'>
-                    Startup
-                  </HeadingH5>
+                  Startup
                 </CategoriesButtons>
 
                 <CategoriesButtons variant="Disable">
-                  <HeadingH5 variant='Gray'>
-                    Marketing
-                  </HeadingH5>
+                  Marketing
                 </CategoriesButtons>
 
                 <CategoriesButtons variant="Disable">
-                  <HeadingH5 variant='Gray'>
-                    Business
-                  </HeadingH5>
+                  Business
                 </CategoriesButtons>
               </CategoriesMain>
             </CategoriesContainer>
