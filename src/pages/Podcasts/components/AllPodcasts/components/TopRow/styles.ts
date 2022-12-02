@@ -22,12 +22,15 @@ export const TopRowMain = styled.div`
 
 export const Content = styled.div`
   width: 100%;
-  max-width: 38.375rem;
 
   display: flex;
   flex-direction: column;
   
   gap: 1.25rem;
+
+  @media (max-width: 48rem) {
+    max-width: 100%; 
+  }
 `;
 
 export const CategoriesContainer = styled.div`
@@ -42,4 +45,12 @@ export const CategoriesMain = styled.main`
   grid-template-columns: repeat(4, 4fr);
 
   gap: 1rem;
+
+  @media (max-width: 48rem) {
+    grid-template-columns: repeat(3, 3fr);
+  }
+
+  @media (max-width: 30rem) {
+    grid-template-columns: repeat(2, 2fr);
+  }
 `;
