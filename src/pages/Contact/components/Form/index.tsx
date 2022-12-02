@@ -23,8 +23,6 @@ const ContactSchema = Yup.object().shape({
     .max(50, 'Need to write more than that')
     .required('Query Related is required'),
   message: Yup.string()
-    .min(10, 'Write a little more')
-        .max(50, 'Need to write more than that')
     .required('Message is required'),
 });
 
@@ -74,12 +72,3 @@ export const FormSchema = () => {
     </>
   );
 }
-
-/*
-        <form>
-          <input type="text"  required />
-          <input type="text"  required />
-          <input type="text"  required />
-          <textarea  />
-        </form>
-*/
