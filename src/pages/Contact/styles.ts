@@ -4,7 +4,6 @@ import LineContact from '../../assets/ImgSvg/LineContact.svg';
 
 export const ContactContainer = styled.div`
   width: 100%;
-  height: 100vh;
 
   background-image: url(${LineContact});
   background-size: 20%;
@@ -24,10 +23,14 @@ export const ContactMain = styled.main`
   display: flex;
   gap: 2rem;
 
+  padding: 4rem 0;
+
   @media (max-width: 64rem) {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    gap: 5rem;
   }
 `;
  

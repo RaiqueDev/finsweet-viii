@@ -15,8 +15,6 @@ export const FormSchemaContainer = styled.div`
 export const FormInput = styled(Form)`
   width: 100%;
 
-  padding: 0 0 2rem 0;
-
   display: flex;
   align-items: flex-start;
   flex-direction: column;

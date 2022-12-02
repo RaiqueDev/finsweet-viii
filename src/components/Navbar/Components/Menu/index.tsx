@@ -31,7 +31,7 @@ export const Menu = ({ handleOpen }: any) => {
           <CloseToggle onClick={handleOpen}>
             <NavLink to="/" style={{ textDecoration: 'none', color: '#14142B' }}>
               <MenuLink>
-                HOME
+                Home
 
                 <CaretRight size={20} color="#14142B" weight="bold" />
               </MenuLink>
@@ -41,7 +41,7 @@ export const Menu = ({ handleOpen }: any) => {
           <CloseToggle onClick={handleOpen}>
             <NavLink to="/podcasts" style={{ textDecoration: 'none', color: '#14142B' }}>
               <MenuLink>
-                PODCASTS
+                Podcasts
 
                 <CaretRight size={20} color="#14142B" weight="bold" />
               </MenuLink>
@@ -51,7 +51,7 @@ export const Menu = ({ handleOpen }: any) => {
           <CloseToggle onClick={handleOpen}>
             <NavLink to="/host" style={{ textDecoration: 'none', color: '#14142B' }}>
               <MenuLink>
-                HOST
+                Host
 
                 <CaretRight size={20} color="#14142B" weight="bold" />
               </MenuLink>
@@ -61,7 +61,7 @@ export const Menu = ({ handleOpen }: any) => {
           <CloseToggle onClick={handleOpen}>
             <NavLink to="/about" style={{ textDecoration: 'none', color: '#14142B' }}>
               <MenuLink>
-                ABOUT
+                About
 
                 <CaretRight size={20} color="#14142B" weight="bold" />
               </MenuLink>
@@ -71,7 +71,7 @@ export const Menu = ({ handleOpen }: any) => {
           <CloseToggle onClick={handleOpen}>
             <NavLink to="/blog" style={{ textDecoration: 'none', color: '#14142B' }}>
               <MenuLink>
-                BLOG
+                Blog
 
                 <CaretRight size={20} color="#14142B" weight="bold" />
               </MenuLink>
@@ -81,7 +81,7 @@ export const Menu = ({ handleOpen }: any) => {
           <CloseToggle onClick={handleOpen}>
             <NavLink to="/contact" style={{ textDecoration: 'none', color: '#14142B' }}>
               <MenuLink>
-                CONTACT
+                Contact
 
                 <CaretRight size={20} color="#14142B" weight="bold" />
               </MenuLink>

@@ -10,7 +10,7 @@ import { Formik } from 'formik';
 
 import * as Yup from 'yup';
 
-import { Button, Caption } from "../../../../styles/global";
+import { Button } from "../../../../styles/global";
 
 const ContactSchema = Yup.object().shape({
   fullName: Yup.string()

@@ -25,16 +25,16 @@ export const GlobalStyle = createGlobalStyle`
 
 // Heading
 
+interface HeadingProps {
+  variant?: 'White' | 'Gray' | 'Purple'
+}
+
 export const HeadingH1 = styled.h1`
   font: 700 2.625rem Inter, sans-serif;
   line-height: 110%;
 
   @media (max-width: 48rem) {
     font: 700 2rem Inter, sans-serif;
-  }
-
-  @media (max-width: 30rem) {
-    font: 700 1.75rem Inter, sans-serif;
   }
 `;
 
@@ -45,10 +45,6 @@ export const HeadingH2 = styled.h2`
   @media (max-width: 48rem) {
     font: 700 1.375rem Poppins, sans-serif;
   }
-
-  @media (max-width: 30rem) {
-    font: 700 1.125rem Poppins, sans-serif;
-  }
 `;
 
 export const HeadingH3 = styled.h3`
@@ -58,23 +54,11 @@ export const HeadingH3 = styled.h3`
   @media (max-width: 48rem) {
     font: 600 1.125rem Poppins, sans-serif;
   }
-
-  @media (max-width: 30rem) {
-    font: 600 .875rem Poppins, sans-serif;
-  }
 `;
-
-interface HeadingProps {
-  variant?: 'White' | 'Gray' | 'Purple'
-}
 
 export const HeadingH4 = styled.h4<HeadingProps>`
   font: 500 1.125rem Poppins, sans-serif;
   line-height: 140%;
-
-  @media (max-width: 30rem) {
-    font: 500 .875rem Poppins, sans-serif;
-  }
 
   ${props => props.variant === 'Purple' && css`
     color: ${props => props.theme.purple};
@@ -85,16 +69,11 @@ export const HeadingH4 = styled.h4<HeadingProps>`
   `}
 `;
 
-
 export const HeadingH5 = styled.h5<HeadingProps>`
   font: 500 .975rem Poppins, sans-serif;
   line-height: 150%;
 
   color: ${props => props.theme.black};
-
-  @media (max-width: 30rem) {
-    font: 500 .75rem Poppins, sans-serif;
-  }
 
   ${props => props.variant === 'White' && css`
     color: ${props => props.theme.white};
@@ -124,11 +103,7 @@ export const Body = styled.p<BodyProps>`
   flex-direction: column;
 
   gap: .75rem;
-
-  @media (max-width: 30rem) {
-    font: 500 .75rem Inter, sans-serif;
-  }
-
+  
   ${props => props.variant === 'SemiBold' && css`
     font-weight: 600;
   `}

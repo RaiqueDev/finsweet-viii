@@ -69,8 +69,7 @@ export const MenuLink = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  font: 700 1rem AdihausDIN, sans-serif;
-  text-transform: uppercase;
+  font: 300 .90rem Inter, sans-serif;
 
   color: ${props => props.theme.black};
 `;
