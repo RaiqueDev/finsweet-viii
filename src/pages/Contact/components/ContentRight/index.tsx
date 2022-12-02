@@ -5,16 +5,16 @@ import {
   SubscribeNow
 } from "./styles";
 
-import { HeadingH4 } from '../../../styles/global';
-
+import { HeadingH4 } from '../../../../styles/global';
 
 import {
   LogoBrands_ApplePodcast,
   LogoBrands_GooglePodcast,
   LogoBrands_SoundCloud,
   LogoBrands_Spotify
-} from "../../../assets/Logos/LogoBrands";
-import { LogoSocialContact } from "../../../assets/Logos/LogoSocialContact";
+} from "../../../../assets/Logos/LogoBrands";
+
+import { LogoSocialContact } from "../../../../assets/Logos/LogoSocialContact";
 
 export const ContentRight = () => {
   return (

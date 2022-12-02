@@ -5,8 +5,9 @@ import {
 import {
   HeadingH3,
   HeadingH4
-} from '../../../styles/global';
-import { Form } from "./Form";
+} from '../../../../styles/global';
+
+import { FormSchema } from "../Form";
 
 export const Header = () => {
   return (
@@ -20,7 +21,7 @@ export const Header = () => {
           Interested in collaborating? Please fill the form below.
         </HeadingH4>
 
-        <Form />
+        <FormSchema />
       </HeaderContainer>
     </>
   );
