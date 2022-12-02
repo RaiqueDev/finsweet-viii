@@ -1,8 +1,8 @@
 import { CaretRight, X } from "phosphor-react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import { Logo } from "../../../../assets/Logos/Logo";
-import { Body, LinkText } from "../../../../styles/global";
+import { LinkText } from "../../../../styles/global";
 
 import {
   CloseToggleContainer,
@@ -21,8 +21,7 @@ export const Menu = ({ handleOpen }: any) => {
 
   const activeStyle = {
     textDecoration: 'none',
-    borderBottom: '3px solid #503AE7',
-    borderRadius: "4px"
+    borderBottom: '3px solid #503AE7'
   };
 
   return (

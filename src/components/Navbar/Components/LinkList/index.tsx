@@ -15,8 +15,7 @@ export const LinksList = () => {
 
   const activeStyle = {
     textDecoration: 'none',
-    borderBottom: '3px solid #503AE7',
-    borderRadius: "4px"
+    borderBottom: '3px solid #503AE7'
   };
 
   return (
