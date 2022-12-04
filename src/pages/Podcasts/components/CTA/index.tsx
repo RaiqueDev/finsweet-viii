@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import {
   Content,
   CTAContainer,
@@ -17,20 +19,74 @@ export const CTA = () => {
       <CTAContainer>
         <CTAMain>
           <Content>
-            <HeadingH1>
-              Become The Hero Of Your Own Story
-            </HeadingH1>
+            <motion.h1
+              initial={{
+                opacity: 0,
+                y: 10,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.2,
+              }}>
 
-            <Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Mus cras lacus tellus morbi viverra suspendisse ornare.
-              Sit volutpat, volutpat ut netus malesuada enim penatibus
-              non aliquet.
-            </Body>
+              <HeadingH1>
+                Become The Hero Of Your Own Story
+              </HeadingH1>
+            </motion.h1>
 
-            <Button variant='Secondary_Button'>
-              Contact us
-            </Button>
+            <motion.p
+              initial={{
+                opacity: 0,
+                y: 10,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.3,
+              }}>
+
+              <Body>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Mus cras lacus tellus morbi viverra suspendisse ornare.
+                Sit volutpat, volutpat ut netus malesuada enim penatibus
+                non aliquet.
+              </Body>
+            </motion.p>
+
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 10,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.4,
+              }}>
+
+              <Button variant='Secondary_Button'>
+                Contact us
+              </Button>
+            </motion.div>
           </Content>
 
         </CTAMain>

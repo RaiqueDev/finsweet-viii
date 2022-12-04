@@ -1,16 +1,17 @@
+import { motion } from 'framer-motion';
+
 import {
   ImgPerson,
   NameStars,
-  Person
+  Person,
+  Card
 } from "./styles";
-
-import { Card } from './styles';
 
 import { Body } from '../../../../../../styles/global';
 
 interface TestimonialsCardProps {
   id?: number;
-  img: string;
+  img: JSX.Element;
   name: string;
   description: string;
 }
@@ -20,22 +21,94 @@ export const TestimonialsCards = ({ img, name, description }: TestimonialsCardPr
     <>
       <Card>
         <Person>
-          <ImgPerson>
-            <img src={img} />
-          </ImgPerson>
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 10,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 400,
+              damping: 40,
+              mass: 3.5,
+              delay: 0.7,
+            }}>
+
+            <ImgPerson>
+              {img}
+            </ImgPerson>
+          </motion.div>
 
           <NameStars>
-            {name}
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 10,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.6,
+              }}>
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="116" height="20" fill="none" viewBox="0 0 116 20">
-              <path fill="#FF7602" d="m10 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L10 13.82l-5.878 4.27 2.245-6.91L.49 6.91h7.266L10 0Zm24 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L34 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L34 0Zm24 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L58 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L58 0Zm24 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L82 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L82 0Zm24 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L106 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L106 0Z" />
-            </svg>
+              {name}
+            </motion.div>
+
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 10,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.7,
+              }}>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="116" height="20" fill="none" viewBox="0 0 116 20">
+                <path fill="#FF7602" d="m10 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L10 13.82l-5.878 4.27 2.245-6.91L.49 6.91h7.266L10 0Zm24 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L34 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L34 0Zm24 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L58 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L58 0Zm24 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L82 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L82 0Zm24 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L106 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L106 0Z" />
+              </svg>
+            </motion.div>
           </NameStars>
         </Person>
 
-        <Body>
-          {description}
-        </Body>
+        <motion.p
+          initial={{
+            opacity: 0,
+            y: 10,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 400,
+            damping: 40,
+            mass: 3.5,
+            delay: 0.8,
+          }}>
+
+          <Body>
+            {description}
+          </Body>
+        </motion.p>
       </Card>
     </>
   );

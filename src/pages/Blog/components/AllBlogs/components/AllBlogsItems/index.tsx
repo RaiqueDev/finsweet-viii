@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import {
   AllBlogsImg,
   AllBlogsItemsContainer
@@ -20,21 +21,93 @@ export const AllBlogsItems = ({ img, title, description }: AllBlogsItemsProps) =
   return (
     <>
       <AllBlogsItemsContainer>
-        <AllBlogsImg>
-          <img src={img} />
-        </AllBlogsImg>
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 10,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 400,
+            damping: 40,
+            mass: 3.5,
+            delay: 0.2,
+          }}>
 
-        <HeadingH3>
-          {title}
-        </HeadingH3>
+          <AllBlogsImg>
+            <img src={img} />
+          </AllBlogsImg>
+        </motion.div>
 
-        <Body>
-          {description}
-        </Body>
+        <motion.h3
+          initial={{
+            opacity: 0,
+            y: 10,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 400,
+            damping: 40,
+            mass: 3.5,
+            delay: 0.3,
+          }}>
 
-        <Button variant="Read_Now">
-          Read Now
-        </Button>
+          <HeadingH3>
+            {title}
+          </HeadingH3>
+        </motion.h3>
+
+        <motion.p
+          initial={{
+            opacity: 0,
+            y: 10,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 400,
+            damping: 40,
+            mass: 3.5,
+            delay: 0.4,
+          }}>
+
+          <Body>
+            {description}
+          </Body>
+        </motion.p>
+
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 10,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 400,
+            damping: 40,
+            mass: 3.5,
+            delay: 0.4,
+          }}>
+
+          <Button variant="Read_Now">
+            Read Now
+          </Button>
+        </motion.div>
       </AllBlogsItemsContainer>
     </>
   );

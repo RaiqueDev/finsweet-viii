@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import {
   OurSponsorsContainer,
   OurSponsorsMain,
@@ -49,9 +51,27 @@ export const OurSponsors = () => {
     <>
       <OurSponsorsContainer>
         <OurSponsorsMain>
-          <HeadingH1>
-            Our Sponsors
-          </HeadingH1>
+          <motion.h1
+            initial={{
+              opacity: 0,
+              y: 10,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 400,
+              damping: 40,
+              mass: 3.5,
+              delay: 0.4,
+            }}>
+
+            <HeadingH1>
+              Our Sponsors
+            </HeadingH1>
+          </motion.h1>
 
           <SponsorLogos>
             {sponsorlogos.map(sponsorlogo => {
@@ -63,7 +83,25 @@ export const OurSponsors = () => {
               )
             })}
 
-            <SponsorBecomeASponsor />
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 10,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.6,
+              }}>
+
+              <SponsorBecomeASponsor />
+            </motion.div>
           </SponsorLogos>
         </OurSponsorsMain>
       </OurSponsorsContainer>

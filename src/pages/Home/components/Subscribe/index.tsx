@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import {
   SubscribeContainer,
   SubscribeForm,
@@ -13,19 +15,73 @@ export const Subscribe = () => {
   return (
     <>
       <SubscribeContainer>
-        <SubscribeMain>
-          <HeadingH2>
-            Receive new episodes in your inbox.
-          </HeadingH2>
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 10,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 400,
+            damping: 40,
+            mass: 3.5,
+            delay: 0.2,
+          }}>
 
-          <SubscribeForm>
-            <input type="email" placeholder='Enter Your Email' />
+          <SubscribeMain>
+            <motion.h2
+              initial={{
+                opacity: 0,
+                y: 10,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.3,
+              }}>
 
-            <Button variant='Input_Subscribe'>
-              Subscribe
-            </Button>
-          </SubscribeForm>
-        </SubscribeMain>
+              <HeadingH2>
+                Receive new episodes in your inbox.
+              </HeadingH2>
+            </motion.h2>
+
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 10,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.4,
+              }}>
+
+              <SubscribeForm>
+                <input type="email" placeholder='Enter Your Email' />
+
+                <Button variant='Input_Subscribe'>
+                  Subscribe
+                </Button>
+              </SubscribeForm>
+            </motion.div>
+          </SubscribeMain>
+        </motion.div>
       </SubscribeContainer>
     </>
   );

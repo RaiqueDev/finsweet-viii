@@ -1,5 +1,13 @@
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Caption, HeadingH2, Body, Button } from '../../../../styles/global';
+
+import {
+  Caption,
+  HeadingH2,
+  Body,
+  Button
+} from '../../../../styles/global';
+
 import {
   BlogHeroContainer,
   BlogHeroMain,
@@ -13,24 +21,95 @@ export const BlogHero = () => {
       <BlogHeroContainer>
         <BlogHeroMain>
           <BlogHeroContent>
-            <Caption variant='Purple'>
-              Featured
-            </Caption>
+            <motion.h5
+              initial={{
+                opacity: 0,
+                y: 40,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.2,
+              }}>
 
-            <HeadingH2>
-              Should I raise money for my startup, or not?
-            </HeadingH2>
+              <Caption variant='Purple'>
+                Featured
+              </Caption>
+            </motion.h5>
 
-            <Body>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua.
-            </Body>
+            <motion.h2
+              initial={{
+                opacity: 0,
+                y: 40,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.3,
+              }}>
+              <HeadingH2>
+                Should I raise money for my startup, or not?
+              </HeadingH2>
+            </motion.h2>
+
+            <motion.p
+              initial={{
+                opacity: 0,
+                y: 40,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.4,
+              }}>
+
+              <Body>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                erat, sed diam voluptua.
+              </Body>
+            </motion.p>
 
             <Link to="/singleblog" style={{ textDecoration: 'none' }}>
-              <Button variant='Listen'>
-                Read Now
-              </Button>
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  y: 40,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 40,
+                  mass: 3.5,
+                  delay: 0.5,
+                }}>
+
+                <Button variant='Listen'>
+                  Read Now
+                </Button>
+              </motion.div>
             </Link>
           </BlogHeroContent>
 

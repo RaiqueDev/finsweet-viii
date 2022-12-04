@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContentRightContainer = styled.div`
   width: 100%;
-  max-width: 29.25rem;
+  max-width: 39rem;
 `;
 
 export const ContentRightMain = styled.main`

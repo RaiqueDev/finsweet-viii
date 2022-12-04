@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import {
   DreamSectionContainer,
   DreamSectionImage,
@@ -17,17 +19,73 @@ export const DreamSection = () => {
       <DreamSectionContainer>
         <DreamSectionMain>
           <Content>
-            <HeadingH2>
-              A small story about a big dream  —
-            </HeadingH2>
+            <motion.h2
+              initial={{
+                opacity: 0,
+                y: 10,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.2,
+              }}>
 
-            <Body>
-              Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon
-            </Body>
+              <HeadingH2>
+                A small story about a big dream  —
+              </HeadingH2>
+            </motion.h2>
 
-            <Body variant="SemiBold">
-              Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and
-            </Body>
+            <motion.p
+              initial={{
+                opacity: 0,
+                y: 10,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.3,
+              }}>
+
+              <Body>
+                Apparently we had reached a great height in the atmosphere, for the sky
+                was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon
+              </Body>
+            </motion.p>
+
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 10,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.4,
+              }}>
+
+              <Body variant="SemiBold">
+                Apparently we had reached a great height in the atmosphere, for the sky 
+                was a dead black, and
+              </Body>
+            </motion.div>
           </Content>
 
           <DreamSectionImage>

@@ -15,6 +15,7 @@ import { HeadingH2 } from "../../../../styles/global";
 
 import { TeamMember } from "./components/TeamMember";
 import { IconSocial } from "../../../../assets/Logos/LogoIcon";
+import { motion } from 'framer-motion';
 
 const teammembers = [
   {
@@ -52,9 +53,27 @@ export const MeetOurTeam = () => {
     <>
       <MeetOurTeamContainer>
         <MeetOurTeamMain>
-          <HeadingH2>
-            Meet Our Team
-          </HeadingH2>
+          <motion.h2
+            initial={{
+              opacity: 0,
+              y: 10,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 400,
+              damping: 40,
+              mass: 3.5,
+              delay: 0.2,
+            }}>
+
+            <HeadingH2>
+              Meet Our Team
+            </HeadingH2>
+          </motion.h2>
 
           <TeamMembers>
             {teammembers.map(teammember => {

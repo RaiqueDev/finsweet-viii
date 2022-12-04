@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import {
   Content,
   TopRowContainer,
@@ -16,19 +17,73 @@ export const TopRow = () => {
       <TopRowContainer>
         <TopRowMain>
           <Content>
-            <HeadingH2>
-              Recent Episodes
-            </HeadingH2>
+            <motion.h2
+              initial={{
+                opacity: 0,
+                y: 10,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.2,
+              }}>
 
-            <Body>
-              Apparently we had reached a great height in the
-              atmosphere, for the sky was a dead black.
-            </Body>
+              <HeadingH2>
+                Recent Episodes
+              </HeadingH2>
+            </motion.h2>
+
+            <motion.p
+              initial={{
+                opacity: 0,
+                y: 10,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.3,
+              }}>
+
+              <Body>
+                Apparently we had reached a great height in the
+                atmosphere, for the sky was a dead black.
+              </Body>
+            </motion.p>
           </Content>
 
-          <Button variant="Primary_Button">
-            See All Episiodes
-          </Button>
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 10,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 400,
+              damping: 40,
+              mass: 3.5,
+              delay: 0.4,
+            }}>
+
+            <Button variant="Primary_Button">
+              See All Episiodes
+            </Button>
+          </motion.div>
         </TopRowMain>
       </TopRowContainer>
     </>

@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 
 import {
@@ -27,10 +28,26 @@ export const LinksList = () => {
             style={({ isActive }) =>
               isActive ? activeStyle : disable
             }>
-
-            <LinkText>
-              Podcast
-            </LinkText>
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: -40,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.2,
+              }}>
+              <LinkText>
+                Podcast
+              </LinkText>
+            </motion.div>
           </NavLink>
 
           <NavLink
@@ -38,10 +55,27 @@ export const LinksList = () => {
             style={({ isActive }) =>
               isActive ? activeStyle : disable
             }>
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: -40,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.3,
+              }}>
 
-            <LinkText>
-              Host
-            </LinkText>
+              <LinkText>
+                Host
+              </LinkText>
+            </motion.div>
           </NavLink>
 
           <NavLink
@@ -50,9 +84,26 @@ export const LinksList = () => {
               isActive ? activeStyle : disable
             }>
 
-            <LinkText>
-              About
-            </LinkText>
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: -40,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.4,
+              }}>
+              <LinkText>
+                About
+              </LinkText>
+            </motion.div>
           </NavLink>
 
           <NavLink
@@ -60,10 +111,27 @@ export const LinksList = () => {
             style={({ isActive }) =>
               isActive ? activeStyle : disable
             }>
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: -40,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.5,
+              }}>
 
-            <LinkText>
-              Blog
-            </LinkText>
+              <LinkText>
+                Blog
+              </LinkText>
+            </motion.div>
           </NavLink>
 
           <NavLink
@@ -72,9 +140,26 @@ export const LinksList = () => {
               isActive ? activeStyle : disable
             }>
 
-            <LinkText>
-              Contact
-            </LinkText>
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: -40,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.6,
+              }}>
+              <LinkText>
+                Contact
+              </LinkText>
+            </motion.div>
           </NavLink>
         </nav>
       </LinksListContainer>

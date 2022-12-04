@@ -1,3 +1,7 @@
+import { motion } from 'framer-motion';
+import { Formik } from 'formik';
+import * as Yup from 'yup';
+
 import {
   FieldInput,
   FormInput,
@@ -5,10 +9,6 @@ import {
   FormSchemaContainer,
   ErrorMessage
 } from "./styles";
-
-import { Formik } from 'formik';
-
-import * as Yup from 'yup';
 
 import { Button } from "../../../../styles/global";
 
@@ -43,28 +43,120 @@ export const FormSchema = () => {
           }}>
           {({ errors, touched }) => (
             <FormInput>
-              <FieldInput name="fullName" placeholder="Your full Name" />
+              <motion.div
+                style={{ width: '100%' }}
+                initial={{
+                  opacity: 0,
+                  y: 40,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 40,
+                  mass: 3.5,
+                  delay: 0.2,
+                }}>
+                <FieldInput name="fullName" placeholder="Your full Name" />
+              </motion.div>
               {errors.fullName && touched.fullName ? (
                 <ErrorMessage>{errors.fullName}</ErrorMessage>
               ) : null}
 
-              <FieldInput name="email" placeholder="Your Email Id" />
+              <motion.div
+                style={{ width: '100%' }}
+                initial={{
+                  opacity: 0,
+                  y: 40,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 40,
+                  mass: 3.5,
+                  delay: 0.3,
+                }}>
+
+                <FieldInput name="email" placeholder="Your Email Id" />
+              </motion.div>
               {errors.email && touched.email ? (
                 <ErrorMessage>{errors.email}</ErrorMessage>
               ) : null}
 
-              <FieldInput name="queryRelated" placeholder="Query Related" />
+              <motion.div
+                style={{ width: '100%' }}
+                initial={{
+                  opacity: 0,
+                  y: 40,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 40,
+                  mass: 3.5,
+                  delay: 0.4,
+                }}>
+                <FieldInput name="queryRelated" placeholder="Query Related" />
+              </motion.div>
               {errors.queryRelated && touched.queryRelated ? (
                 <ErrorMessage>{errors.queryRelated}</ErrorMessage>
               ) : null}
 
-              <FieldTextArea name="message" placeholder="Message" />
+              <motion.div
+                style={{ width: '100%' }}
+                initial={{
+                  opacity: 0,
+                  y: 40,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 40,
+                  mass: 3.5,
+                  delay: 0.5,
+                }}>
+                <FieldTextArea name="message" placeholder="Message" />
+              </motion.div>
 
-              <Button
-                variant="Primary_Button"
-                type="submit">
-                Contact now
-              </Button>
+              <motion.div
+                style={{ width: '100%' }}
+                initial={{
+                  opacity: 0,
+                  y: 40,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 40,
+                  mass: 3.5,
+                  delay: 0.7,
+                }}>
+
+                <Button
+                  variant="Primary_Button"
+                  type="submit">
+                  Contact now
+                </Button>
+              </motion.div>
             </FormInput>
           )}
         </Formik>

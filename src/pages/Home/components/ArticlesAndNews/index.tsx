@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import {
   ArticlesAndNewsContainer,
   ArticlesAndNewsMain,
@@ -19,59 +20,114 @@ export const ArticlesAndNews = () => {
     <>
       <ArticlesAndNewsContainer>
         <ArticlesAndNewsMain>
+
+
           <ItemCard variant="Off_White">
-            <ItemCardContent variant="Margin">
-              <HeadingH2>
-                Read our <br />
-                articles & new2
-              </HeadingH2>
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 10,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.2,
+              }}>
+              <ItemCardContent variant="Margin">
+                <HeadingH2>
+                  Read our <br />
+                  articles & new2
+                </HeadingH2>
 
-              <a href="#">
-                <HeadingH4>
-                  See More
-                </HeadingH4>
-              </a>
-            </ItemCardContent>
+                <a href="#">
+                  <HeadingH4>
+                    See More
+                  </HeadingH4>
+                </a>
+              </ItemCardContent>
+            </motion.div>
           </ItemCard>
 
           <ItemCard>
-            <ItemCardImg>
-              <img src="https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-            </ItemCardImg>
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 10,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.3,
+              }}>
 
-            <ItemCardContent>
-              <HeadingH3>
-                Getting the first 100 customers for your business
-              </HeadingH3>
+              <ItemCardImg>
+                <img src="https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+              </ItemCardImg>
 
-              <Body>
-                Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum.
-              </Body>
+              <ItemCardContent>
+                <HeadingH3>
+                  Getting the first 100 customers for your business
+                </HeadingH3>
 
-              <Button variant="Read_Now">
-                Read Now
-              </Button>
-            </ItemCardContent>
+                <Body>
+                  Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum.
+                </Body>
+
+                <Button variant="Read_Now">
+                  Read Now
+                </Button>
+              </ItemCardContent>
+            </motion.div>
           </ItemCard>
 
           <ItemCard>
-            <ItemCardImg>
-              <img src="https://images.pexels.com/photos/3568520/pexels-photo-3568520.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-            </ItemCardImg>
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 10,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.4,
+              }}>
 
-            <ItemCardContent>
-              <HeadingH3>
-                Apparently we had reached a great height in the atmosphere, ...
-              </HeadingH3>
+              <ItemCardImg>
+                <img src="https://images.pexels.com/photos/3568520/pexels-photo-3568520.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+              </ItemCardImg>
 
-              <Body>
-                Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum.
-              </Body>
+              <ItemCardContent>
+                <HeadingH3>
+                  Apparently we had reached a great height in the atmosphere, ...
+                </HeadingH3>
 
-              <Button variant="Read_Now">
-                Read Now
-              </Button>
-            </ItemCardContent>
+                <Body>
+                  Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum.
+                </Body>
+
+                <Button variant="Read_Now">
+                  Read Now
+                </Button>
+              </ItemCardContent>
+            </motion.div>
           </ItemCard>
 
         </ArticlesAndNewsMain>

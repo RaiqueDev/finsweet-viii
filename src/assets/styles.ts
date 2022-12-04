@@ -38,6 +38,33 @@ export const ImageTeamMembersContainer = styled.div<ImageTeamMembersProps>`
   `}
 `;
 
+interface ImageTestimonialsCardProps {
+  variant?: 'EveMadien' | 'AshBenfred' | 'RyanSmith';
+}
+
+export const ImageTestimonialsCardContainer = styled.div<ImageTestimonialsCardProps>`
+  width: 5rem;
+  height: 5rem;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 99px;
+
+  ${props => props.variant === 'EveMadien' && css`
+    background-image: url('https://images.pexels.com/photos/3310695/pexels-photo-3310695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  `}
+
+  ${props => props.variant === 'AshBenfred' && css`
+    background-image: url('https://images.pexels.com/photos/13677413/pexels-photo-13677413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  `}
+
+    ${props => props.variant === 'RyanSmith' && css`
+    background-image: url('https://images.pexels.com/photos/5273717/pexels-photo-5273717.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  `}
+`;
+
 // Logo Footer
 
 export const LogoFooterContainer = styled.div`

@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import {
   SponsorBecomeASponsorContainer,
   SponsorBecomeASponsorMain,
@@ -20,7 +22,25 @@ export const SponsorLogo = ({ logo }: SponsorLogoProps) => {
   return (
     <>
       <SponsorLogoContainer>
-        {logo}
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 10,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 400,
+            damping: 40,
+            mass: 3.5,
+            delay: 0.2,
+          }}>
+
+          {logo}
+        </motion.div>
       </SponsorLogoContainer>
     </>
   );

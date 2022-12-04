@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import {
   Arrows,
   ButtonArrow,
@@ -22,26 +24,80 @@ export const TopRow = () => {
       <TopRowContainer>
         <TopRowMain>
           <Content>
-            <HeadingH2>
-              What our listeners say
-            </HeadingH2>
+            <motion.h2
+              initial={{
+                opacity: 0,
+                y: 10,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.2,
+              }}>
 
-            <Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus cras lacus tellus
-              morbi viverra suspendisse ornare. Sit volutpat, volutpat ut netus malesuada
-              enim penatibus non aliquet.
-            </Body>
+              <HeadingH2>
+                What our listeners say
+              </HeadingH2>
+            </motion.h2>
+
+            <motion.p
+              initial={{
+                opacity: 0,
+                y: 10,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 40,
+                mass: 3.5,
+                delay: 0.3,
+              }}>
+
+              <Body>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus cras lacus tellus
+                morbi viverra suspendisse ornare. Sit volutpat, volutpat ut netus malesuada
+                enim penatibus non aliquet.
+              </Body>
+            </motion.p>
           </Content>
 
-          <Arrows>
-            <ButtonArrow>
-              <ArrowLeft size={24} />
-            </ButtonArrow>
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 10,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 400,
+              damping: 40,
+              mass: 3.5,
+              delay: 0.4,
+            }}>
 
-            <ButtonArrow>
-              <ArrowRight size={24} />
-            </ButtonArrow>
-          </Arrows>
+            <Arrows>
+              <ButtonArrow>
+                <ArrowLeft size={24} />
+              </ButtonArrow>
+
+              <ButtonArrow>
+                <ArrowRight size={24} />
+              </ButtonArrow>
+            </Arrows>
+          </motion.div>
         </TopRowMain>
       </TopRowContainer>
     </>
