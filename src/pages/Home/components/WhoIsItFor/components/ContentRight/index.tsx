@@ -9,12 +9,10 @@ export const ContentRight = () => {
     <>
       <motion.div
         initial={{
-          opacity: 0,
-          x: 40,
+          opacity: 0
         }}
         whileInView={{
-          opacity: 1,
-          x: 0,
+          opacity: 1
         }}
         transition={{
           type: "spring",
