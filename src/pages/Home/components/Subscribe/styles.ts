@@ -33,12 +33,12 @@ export const SubscribeMain = styled.div`
 export const SubscribeForm = styled.div`
   width: 90%;
   max-width: 31.9375rem;
+  margin: 0 auto;
 
   display: flex;
 
   input[type=email] {
     width: 100%;
-    max-width: 22.9375rem;
     height: 3rem;
 
     padding: 1rem;
@@ -50,5 +50,10 @@ export const SubscribeForm = styled.div`
     ::placeholder {
       color: ${props => props.theme.gray};
     }
+  }
+
+  @media (max-width: 30rem) {
+    flex-direction: column;
+    gap: 1rem;
   }
 `;

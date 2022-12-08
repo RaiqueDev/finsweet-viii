@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const ListContainer = styled.div`
   width: 100%;
@@ -27,13 +27,29 @@ export const ListItem = styled.div`
   max-width: 26rem;
 `;
 
-export const ItemImage = styled.div`
-  img {
-    width: 100%;
-    height: 16rem;
-    background-size: auto;
-    background-repeat: no-repeat;
-  }
+interface ItemListImageProps {
+  variant?: 'List1' | 'List2' | 'List3'
+}
+
+export const ItemListImage = styled.div<ItemListImageProps>`
+  width: 100%;
+  height: 16rem;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  ${props => props.variant === 'List1' && css`
+    background-image: url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  `}
+
+  ${props => props.variant === 'List2' && css`
+    background-image: url('https://images.pexels.com/photos/3182807/pexels-photo-3182807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  `}
+
+  ${props => props.variant === 'List3' && css`
+    background-image: url('https://images.pexels.com/photos/3184290/pexels-photo-3184290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  `}
 `;
 
 export const ItemContent = styled.div`

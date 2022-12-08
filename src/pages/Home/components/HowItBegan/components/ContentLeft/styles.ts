@@ -12,7 +12,7 @@ export const ContentLeftContainer = styled.div`
   background-image: url('https://images.pexels.com/photos/6878173/pexels-photo-6878173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-position: left;
   background-repeat: no-repeat;
-  background-size: 95%;
+  background-size: cover;
 `;
 
 export const ContentLeftMain = styled.div`
@@ -35,5 +35,5 @@ export const Videos = styled.div`
   margin-bottom: 3.75rem;
 
   background-color: ${props => props.theme.blue};
-  color: ${props => props.theme.white}
+  color: ${props => props.theme.white};
 `;

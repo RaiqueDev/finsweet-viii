@@ -78,3 +78,28 @@ export const LogoFooterContainer = styled.div`
     height: 100%;
   }
 `;
+
+interface EpImageProps {
+  variant?: 'Ep1' | 'Ep2' | 'Ep3'
+}
+
+export const EpImageContainer = styled.div<EpImageProps>`
+  width: 100%;
+  height: 16rem;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  ${props => props.variant === 'Ep1' && css`
+    background-image: url('https://images.pexels.com/photos/3182823/pexels-photo-3182823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  `}
+
+  ${props => props.variant === 'Ep2' && css`
+    background-image: url('https://images.pexels.com/photos/3183157/pexels-photo-3183157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  `}
+
+    ${props => props.variant === 'Ep3' && css`
+    background-image: url('https://images.pexels.com/photos/3182787/pexels-photo-3182787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  `}
+`;

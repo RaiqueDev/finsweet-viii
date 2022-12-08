@@ -11,14 +11,13 @@ export const AboutOurTeamContainer = styled.div`
 
   background-image: url(${AboutOurTeamLine});
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
 `;
 
 export const AboutOurTeamMain = styled.main`
   width: 90%;
   max-width: 64rem;
-  height: 36rem;
 
   margin: 0 auto;
 
@@ -56,7 +55,6 @@ export const ImageAboutOurTeam = styled.div`
   width: 100%;
   height: 20rem;
 
-  background-color: yellow;
   background-image: url('https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-repeat: no-repeat;
   background-size: cover;

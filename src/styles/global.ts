@@ -48,7 +48,7 @@ export const HeadingH2 = styled.h2`
 `;
 
 export const HeadingH3 = styled.h3`
-  font: 600 1.375rem Poppins, sans-serif;
+  font: 600 1.275rem Poppins, sans-serif;
   line-height: 125%;
 
   @media (max-width: 48rem) {

@@ -24,10 +24,10 @@ export const Achievements = () => {
               }}
               transition={{
                 type: "spring",
-                stiffness: 400,
-                damping: 40,
-                mass: 3.5,
-                delay: 0.2,
+                stiffness: 600,
+                damping: 20,
+                mass: 6,
+                delay: 0.1,
               }}>
 
               <AchievementsIcon>
@@ -53,9 +53,9 @@ export const Achievements = () => {
                 }}
                 transition={{
                   type: "spring",
-                  stiffness: 400,
-                  damping: 40,
-                  mass: 3.5,
+                  stiffness: 600,
+                  damping: 20,
+                  mass: 6,
                   delay: 0.2,
                 }}>
                 500+
@@ -72,10 +72,10 @@ export const Achievements = () => {
                 }}
                 transition={{
                   type: "spring",
-                  stiffness: 400,
-                  damping: 40,
-                  mass: 3.5,
-                  delay: 0.2,
+                  stiffness: 600,
+                  damping: 20,
+                  mass: 6,
+                  delay: 0.3,
                 }}>
                 Podcasts
               </motion.h2>
@@ -94,10 +94,10 @@ export const Achievements = () => {
             }}
             transition={{
               type: "spring",
-              stiffness: 400,
-              damping: 40,
-              mass: 3.5,
-              delay: 0.2,
+              stiffness: 600,
+              damping: 20,
+              mass: 6,
+              delay: 0.1,
             }}>
 
             <AchievementsIcon>
@@ -120,10 +120,10 @@ export const Achievements = () => {
               }}
               transition={{
                 type: "spring",
-                stiffness: 400,
-                damping: 40,
-                mass: 3.5,
-                delay: 0.3,
+                stiffness: 600,
+                damping: 20,
+                mass: 6,
+                delay: 0.2,
               }}>
               500+
             </motion.h1>
@@ -139,10 +139,10 @@ export const Achievements = () => {
               }}
               transition={{
                 type: "spring",
-                stiffness: 400,
-                damping: 40,
-                mass: 3.5,
-                delay: 0.4,
+                stiffness: 600,
+                damping: 20,
+                mass: 6,
+                delay: 0.3,
               }}>
               Podcasts
             </motion.h2>
@@ -161,10 +161,10 @@ export const Achievements = () => {
             }}
             transition={{
               type: "spring",
-              stiffness: 400,
-              damping: 40,
-              mass: 3.5,
-              delay: 0.2,
+              stiffness: 600,
+              damping: 20,
+              mass: 6,
+              delay: 0.1,
             }}>
 
             <AchievementsIcon>
@@ -191,9 +191,9 @@ export const Achievements = () => {
               }}
               transition={{
                 type: "spring",
-                stiffness: 400,
-                damping: 40,
-                mass: 3.5,
+                stiffness: 600,
+                damping: 20,
+                mass: 6,
                 delay: 0.2,
               }}>
               500+
@@ -210,10 +210,10 @@ export const Achievements = () => {
               }}
               transition={{
                 type: "spring",
-                stiffness: 400,
-                damping: 40,
-                mass: 3.5,
-                delay: 0.2,
+                stiffness: 600,
+                damping: 20,
+                mass: 6,
+                delay: 0.3,
               }}>
               Podcasts
             </motion.h2>
@@ -232,10 +232,10 @@ export const Achievements = () => {
             }}
             transition={{
               type: "spring",
-              stiffness: 400,
-              damping: 40,
-              mass: 3.5,
-              delay: 0.2,
+              stiffness: 600,
+              damping: 20,
+              mass: 6,
+              delay: 0.1,
             }}>
 
             <AchievementsIcon>
@@ -258,9 +258,9 @@ export const Achievements = () => {
               }}
               transition={{
                 type: "spring",
-                stiffness: 400,
-                damping: 40,
-                mass: 3.5,
+                stiffness: 600,
+                damping: 20,
+                mass: 6,
                 delay: 0.2,
               }}>
 
@@ -280,10 +280,10 @@ export const Achievements = () => {
               }}
               transition={{
                 type: "spring",
-                stiffness: 400,
-                damping: 40,
-                mass: 3.5,
-                delay: 0.2,
+                stiffness: 600,
+                damping: 20,
+                mass: 6,
+                delay: 0.3,
               }}>
 
               Podcasts

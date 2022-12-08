@@ -80,12 +80,23 @@ export const ItemCardContent = styled.div<ItemCardContentProps>`
   }
 `;
 
-export const ItemCardImg = styled.div`
+interface ItemCardImgProps {
+  variant?: 'ImgCard1' | 'ImgCard2'
+}
+
+export const ItemCardImg = styled.div<ItemCardImgProps>`
   width: 100%;
   height: 20rem;
 
-  img {
-    width: 100%;
-    height: 100%;
-  }
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  ${props => props.variant === 'ImgCard1' && css`
+    background-image: url('https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  `}
+  
+  ${props => props.variant === 'ImgCard2' && css`
+    background-image: url('https://images.pexels.com/photos/1028441/pexels-photo-1028441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  `}
 `;

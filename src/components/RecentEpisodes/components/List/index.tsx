@@ -5,24 +5,26 @@ import {
 
 import { ItemList } from "./components/Item";
 
+import { Ep1Image, Ep2Image, Ep3Image } from "../../../../assets/ItemImage";
+
 const list = [
   {
     id: 1,
-    img: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    img: <Ep1Image />,
     title: 'Ep 1: How to build a world-class business brand',
     description: 'Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum.',
     link: 'Listen Now'
   },
   {
     id: 2,
-    img: 'https://images.pexels.com/photos/3182807/pexels-photo-3182807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    img: <Ep2Image />,
     title: 'Ep 2: Getting the first 100 customers for your business',
     description: 'Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum.',
     link: 'Listen Now'
   },
   {
     id: 3,
-    img: 'https://images.pexels.com/photos/3184290/pexels-photo-3184290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    img: <Ep3Image />,
     title: 'Ep 3: Should I raise money for my startup, or not?',
     description: 'Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum.',
     link: 'Listen Now'

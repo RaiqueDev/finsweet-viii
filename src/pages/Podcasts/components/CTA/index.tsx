@@ -12,6 +12,7 @@ import {
   Button,
   HeadingH1
 } from '../../../../styles/global';
+import { Link } from 'react-router-dom';
 
 export const CTA = () => {
   return (
@@ -30,10 +31,10 @@ export const CTA = () => {
               }}
               transition={{
                 type: "spring",
-                stiffness: 400,
-                damping: 40,
-                mass: 3.5,
-                delay: 0.2,
+                stiffness: 600,
+                damping: 20,
+                mass: 6,
+                delay: 0.1,
               }}>
 
               <HeadingH1>
@@ -52,10 +53,10 @@ export const CTA = () => {
               }}
               transition={{
                 type: "spring",
-                stiffness: 400,
-                damping: 40,
-                mass: 3.5,
-                delay: 0.3,
+                stiffness: 600,
+                damping: 20,
+                mass: 6,
+                delay: 0.2,
               }}>
 
               <Body>
@@ -77,15 +78,17 @@ export const CTA = () => {
               }}
               transition={{
                 type: "spring",
-                stiffness: 400,
-                damping: 40,
-                mass: 3.5,
-                delay: 0.4,
+                stiffness: 600,
+                damping: 20,
+                mass: 6,
+                delay: 0.3,
               }}>
 
-              <Button variant='Secondary_Button'>
-                Contact us
-              </Button>
+              <Link to="/contact">
+                <Button variant='Secondary_Button'>
+                  Contact us
+                </Button>
+              </Link>
             </motion.div>
           </Content>
 

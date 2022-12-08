@@ -32,10 +32,10 @@ export const AllBlogsItems = ({ img, title, description }: AllBlogsItemsProps) =
           }}
           transition={{
             type: "spring",
-            stiffness: 400,
-            damping: 40,
-            mass: 3.5,
-            delay: 0.2,
+            stiffness: 600,
+            damping: 20,
+            mass: 6,
+            delay: 0.1,
           }}>
 
           <AllBlogsImg>

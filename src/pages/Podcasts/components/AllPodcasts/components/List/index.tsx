@@ -5,7 +5,7 @@ import {
   ListMain,
   ListItem,
   ItemContent,
-  ItemImage
+  ItemListImage
 } from "./styles";
 
 import {
@@ -35,15 +35,14 @@ export const List = () => {
               }}
               transition={{
                 type: "spring",
-                stiffness: 400,
-                damping: 40,
-                mass: 3.5,
-                delay: 0.2,
+                stiffness: 600,
+                damping: 20,
+                mass: 6,
+                delay: 0.1,
               }}>
 
-              <ItemImage>
-                <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-              </ItemImage>
+              <ItemListImage variant='List1' />
+                
             </motion.div>
 
             <ItemContent>
@@ -58,10 +57,10 @@ export const List = () => {
                 }}
                 transition={{
                   type: "spring",
-                  stiffness: 400,
-                  damping: 40,
-                  mass: 3.5,
-                  delay: 0.3,
+                  stiffness: 600,
+                  damping: 20,
+                  mass: 6,
+                  delay: 0.2,
                 }}>
 
                 <HeadingH3>
@@ -69,7 +68,7 @@ export const List = () => {
                 </HeadingH3>
               </motion.h3>
 
-              <motion.h3
+              <motion.p
                 initial={{
                   opacity: 0,
                   y: 10,
@@ -80,17 +79,17 @@ export const List = () => {
                 }}
                 transition={{
                   type: "spring",
-                  stiffness: 400,
-                  damping: 40,
-                  mass: 3.5,
-                  delay: 0.4,
+                  stiffness: 600,
+                  damping: 20,
+                  mass: 6,
+                  delay: 0.3,
                 }}>
 
                 <Body>
                   Lorem ipsum at vero eos et accusam et justo duo <br />
                   dolores et ea rebum.
                 </Body>
-              </motion.h3>
+              </motion.p>
 
               <motion.div
                 initial={{
@@ -103,9 +102,9 @@ export const List = () => {
                 }}
                 transition={{
                   type: "spring",
-                  stiffness: 400,
-                  damping: 40,
-                  mass: 3.5,
+                  stiffness: 600,
+                  damping: 20,
+                  mass: 6,
                   delay: 0.4,
                 }}>
 
@@ -130,15 +129,13 @@ export const List = () => {
               }}
               transition={{
                 type: "spring",
-                stiffness: 400,
-                damping: 40,
-                mass: 3.5,
-                delay: 0.3,
+                stiffness: 600,
+                damping: 20,
+                mass: 6,
+                delay: 0.1,
               }}>
 
-              <ItemImage>
-                <img src="https://images.pexels.com/photos/3182807/pexels-photo-3182807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-              </ItemImage>
+              <ItemListImage variant='List2' />
             </motion.div>
 
             <ItemContent>
@@ -153,10 +150,10 @@ export const List = () => {
                 }}
                 transition={{
                   type: "spring",
-                  stiffness: 400,
-                  damping: 40,
-                  mass: 3.5,
-                  delay: 0.5,
+                  stiffness: 600,
+                  damping: 20,
+                  mass: 6,
+                  delay: 0.2,
                 }}>
 
                 <HeadingH3>
@@ -175,10 +172,10 @@ export const List = () => {
                 }}
                 transition={{
                   type: "spring",
-                  stiffness: 400,
-                  damping: 40,
-                  mass: 3.5,
-                  delay: 0.6,
+                  stiffness: 600,
+                  damping: 20,
+                  mass: 6,
+                  delay: 0.3,
                 }}>
 
                 <Body>
@@ -198,10 +195,10 @@ export const List = () => {
                 }}
                 transition={{
                   type: "spring",
-                  stiffness: 400,
-                  damping: 40,
-                  mass: 3.5,
-                  delay: 0.7,
+                  stiffness: 600,
+                  damping: 20,
+                  mass: 6,
+                  delay: 0.4,
                 }}>
 
                 <Button variant="Listen">
@@ -225,15 +222,13 @@ export const List = () => {
               }}
               transition={{
                 type: "spring",
-                stiffness: 400,
-                damping: 40,
-                mass: 3.5,
-                delay: 0.4,
+                stiffness: 600,
+                damping: 20,
+                mass: 6,
+                delay: 0.1,
               }}>
 
-              <ItemImage>
-                <img src='https://images.pexels.com/photos/3184290/pexels-photo-3184290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' />
-              </ItemImage>
+              <ItemListImage variant='List3' />
             </motion.div>
 
             <ItemContent>
@@ -248,10 +243,10 @@ export const List = () => {
                 }}
                 transition={{
                   type: "spring",
-                  stiffness: 400,
-                  damping: 40,
-                  mass: 3.5,
-                  delay: 0.8,
+                  stiffness: 600,
+                  damping: 20,
+                  mass: 6,
+                  delay: 0.2,
                 }}>
 
                 <HeadingH3>
@@ -270,10 +265,10 @@ export const List = () => {
                 }}
                 transition={{
                   type: "spring",
-                  stiffness: 400,
-                  damping: 40,
-                  mass: 3.5,
-                  delay: 0.9,
+                  stiffness: 600,
+                  damping: 20,
+                  mass: 6,
+                  delay: 0.3,
                 }}>
 
                 <Body>
@@ -293,10 +288,10 @@ export const List = () => {
                 }}
                 transition={{
                   type: "spring",
-                  stiffness: 400,
-                  damping: 40,
-                  mass: 3.5,
-                  delay: 1,
+                  stiffness: 600,
+                  damping: 20,
+                  mass: 6,
+                  delay: 0.4,
                 }}>
 
                 <Button variant="Listen">

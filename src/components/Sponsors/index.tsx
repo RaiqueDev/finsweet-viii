@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import {
   SponsorsContainer,
   SponsorsMain,
@@ -12,9 +14,27 @@ export const Sponsors = () => {
     <>
       <SponsorsContainer>
         <SponsorsMain>
-          <HeadingH2>
-            Our Sponsors
-          </HeadingH2>
+          <motion.h2
+            initial={{
+              opacity: 0,
+              y: 10,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 600,
+              damping: 20,
+              mass: 6,
+              delay: 0.1,
+            }}>
+
+            <HeadingH2>
+              Our Sponsors
+            </HeadingH2>
+          </motion.h2>
           <LogosSponsors />
         </SponsorsMain>
 

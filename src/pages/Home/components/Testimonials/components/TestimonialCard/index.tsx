@@ -32,10 +32,10 @@ export const TestimonialsCards = ({ img, name, description }: TestimonialsCardPr
             }}
             transition={{
               type: "spring",
-              stiffness: 400,
-              damping: 40,
-              mass: 3.5,
-              delay: 0.7,
+              stiffness: 600,
+              damping: 20,
+              mass: 6,
+              delay: 0.1,
             }}>
 
             <ImgPerson>
@@ -55,10 +55,10 @@ export const TestimonialsCards = ({ img, name, description }: TestimonialsCardPr
               }}
               transition={{
                 type: "spring",
-                stiffness: 400,
-                damping: 40,
-                mass: 3.5,
-                delay: 0.6,
+                stiffness: 600,
+                damping: 20,
+                mass: 6,
+                delay: 0.1,
               }}>
 
               {name}
@@ -75,10 +75,10 @@ export const TestimonialsCards = ({ img, name, description }: TestimonialsCardPr
               }}
               transition={{
                 type: "spring",
-                stiffness: 400,
-                damping: 40,
-                mass: 3.5,
-                delay: 0.7,
+                stiffness: 600,
+                damping: 20,
+                mass: 6,
+                delay: 0.2,
               }}>
 
               <svg xmlns="http://www.w3.org/2000/svg" width="116" height="20" fill="none" viewBox="0 0 116 20">
@@ -99,10 +99,10 @@ export const TestimonialsCards = ({ img, name, description }: TestimonialsCardPr
           }}
           transition={{
             type: "spring",
-            stiffness: 400,
-            damping: 40,
-            mass: 3.5,
-            delay: 0.8,
+            stiffness: 600,
+            damping: 20,
+            mass: 6,
+            delay: 0.3,
           }}>
 
           <Body>

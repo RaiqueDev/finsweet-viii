@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 import {
   Body,
@@ -15,7 +16,6 @@ import {
 export const ContentLeft = () => {
   return (
     <>
-
       <ContentLeftContainer>
         <Text>
           <motion.h1
@@ -82,13 +82,15 @@ export const ContentLeft = () => {
             delay: 0.5,
           }}>
 
-          <Subscribe>
-            <input type="email" placeholder='Enter Your Email Id' />
+          <Link to="/contact">
+            <Subscribe>
+              <input type="email" placeholder='Enter Your Email Id' />
 
-            <Button variant='Primary_Button'>
-              Subscribe
-            </Button>
-          </Subscribe>
+              <Button variant='Primary_Button'>
+                Subscribe
+              </Button>
+            </Subscribe>
+          </Link>
         </motion.form>
       </ContentLeftContainer>
     </>

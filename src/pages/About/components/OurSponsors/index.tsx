@@ -62,10 +62,10 @@ export const OurSponsors = () => {
             }}
             transition={{
               type: "spring",
-              stiffness: 400,
-              damping: 40,
-              mass: 3.5,
-              delay: 0.4,
+              stiffness: 600,
+              damping: 20,
+              mass: 6,
+              delay: 0.1,
             }}>
 
             <HeadingH1>
@@ -83,25 +83,7 @@ export const OurSponsors = () => {
               )
             })}
 
-            <motion.div
-              initial={{
-                opacity: 0,
-                y: 10,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              transition={{
-                type: "spring",
-                stiffness: 400,
-                damping: 40,
-                mass: 3.5,
-                delay: 0.6,
-              }}>
-
-              <SponsorBecomeASponsor />
-            </motion.div>
+            <SponsorBecomeASponsor />
           </SponsorLogos>
         </OurSponsorsMain>
       </OurSponsorsContainer>

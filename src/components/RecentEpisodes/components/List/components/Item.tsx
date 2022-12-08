@@ -3,7 +3,6 @@ import { PlayCircle } from "phosphor-react";
 
 import {
   ItemContent,
-  ItemImage,
   ListItemContainer
 } from "./styles";
 
@@ -15,7 +14,7 @@ import {
 
 interface ItemListProps {
   id?: number;
-  img: string;
+  img: JSX.Element;
   title: string;
   description: string;
   link: string;
@@ -36,15 +35,13 @@ export const ItemList = ({ img, title, description, link }: ItemListProps) => {
           }}
           transition={{
             type: "spring",
-            stiffness: 400,
-            damping: 40,
-            mass: 3.5,
-            delay: 0.5,
+            stiffness: 600,
+            damping: 20,
+            mass: 6,
+            delay: 0.1,
           }}>
 
-          <ItemImage>
-            <img src={img} />
-          </ItemImage>
+          {img}
         </motion.div>
 
         <ItemContent>
@@ -59,10 +56,10 @@ export const ItemList = ({ img, title, description, link }: ItemListProps) => {
             }}
             transition={{
               type: "spring",
-              stiffness: 400,
-              damping: 40,
-              mass: 3.5,
-              delay: 0.6,
+              stiffness: 600,
+              damping: 20,
+              mass: 6,
+              delay: 0.2,
             }}>
 
             <HeadingH3>
@@ -81,10 +78,10 @@ export const ItemList = ({ img, title, description, link }: ItemListProps) => {
             }}
             transition={{
               type: "spring",
-              stiffness: 400,
-              damping: 40,
-              mass: 3.5,
-              delay: 0.7,
+              stiffness: 600,
+              damping: 20,
+              mass: 6,
+              delay: 0.3,
             }}>
 
             <Body>
@@ -103,10 +100,10 @@ export const ItemList = ({ img, title, description, link }: ItemListProps) => {
             }}
             transition={{
               type: "spring",
-              stiffness: 400,
-              damping: 40,
-              mass: 3.5,
-              delay: 0.8,
+              stiffness: 600,
+              damping: 20,
+              mass: 6,
+              delay: 0.4,
             }}>
 
             <Button variant="Listen">

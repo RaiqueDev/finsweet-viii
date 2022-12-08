@@ -10,7 +10,7 @@ export const ContentLeftContainer = styled.div`
   display: flex;
   align-items: center;
 
-  background-image: url(${Lines});
+  background-image: (${Lines});
   background-size: cover;
   background-repeat: no-repeat;
 `;

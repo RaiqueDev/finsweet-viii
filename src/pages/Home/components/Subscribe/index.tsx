@@ -10,6 +10,7 @@ import {
   Button,
   HeadingH2
 } from '../../../../styles/global';
+import { Link } from 'react-router-dom';
 
 export const Subscribe = () => {
   return (
@@ -26,10 +27,10 @@ export const Subscribe = () => {
           }}
           transition={{
             type: "spring",
-            stiffness: 400,
-            damping: 40,
-            mass: 3.5,
-            delay: 0.2,
+            stiffness: 600,
+            damping: 20,
+            mass: 6,
+            delay: 0.1,
           }}>
 
           <SubscribeMain>
@@ -44,10 +45,10 @@ export const Subscribe = () => {
               }}
               transition={{
                 type: "spring",
-                stiffness: 400,
-                damping: 40,
-                mass: 3.5,
-                delay: 0.3,
+                stiffness: 600,
+                damping: 20,
+                mass: 6,
+                delay: 0.2,
               }}>
 
               <HeadingH2>
@@ -66,19 +67,21 @@ export const Subscribe = () => {
               }}
               transition={{
                 type: "spring",
-                stiffness: 400,
-                damping: 40,
-                mass: 3.5,
-                delay: 0.4,
+                stiffness: 600,
+                damping: 20,
+                mass: 6,
+                delay: 0.3,
               }}>
 
-              <SubscribeForm>
-                <input type="email" placeholder='Enter Your Email' />
+              <Link to="/contact">
+                <SubscribeForm>
+                  <input type="email" placeholder='Enter Your Email' />
 
-                <Button variant='Input_Subscribe'>
-                  Subscribe
-                </Button>
-              </SubscribeForm>
+                  <Button variant='Input_Subscribe'>
+                    Subscribe
+                  </Button>
+                </SubscribeForm>
+              </Link>
             </motion.div>
           </SubscribeMain>
         </motion.div>
